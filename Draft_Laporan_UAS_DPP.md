@@ -177,5 +177,4 @@
 ---
 
 ## 9. Tautan Penting
-*   **Link Prototype Figma:** [Masukkan Link Figma di sini, pastikan setting "Anyone with the link can view"]
-*   **Link Folder Google Drive Keseluruhan:** [Masukkan Link GDrive di sini]
+*   **Link Prototype:** [https://uas-desain-pengalaman-pengguna.vercel.app/](https://uas-desain-pengalaman-pengguna.vercel.app/)
