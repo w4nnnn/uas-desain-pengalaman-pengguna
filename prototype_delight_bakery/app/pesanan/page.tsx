@@ -31,26 +31,26 @@ export default function OrderHistoryPage() {
 
         {/* Tabs Navigation using custom styled tabs matching design */}
         <Tabs defaultValue="aktif" className="w-full flex flex-col gap-6">
-          <TabsList variant="line" className="w-full flex border-b border-gray-200 p-0 rounded-none h-auto">
+          <TabsList className="inline-flex w-full overflow-x-auto hide-scrollbar justify-start bg-muted/60 p-1.5 rounded-2xl h-auto gap-1 border border-border/50">
             <TabsTrigger
               value="aktif"
               className={cn(
-                "flex-1 pb-3 relative font-bold text-sm tracking-wider uppercase bg-transparent text-gray-500 rounded-none border-b-2 border-transparent transition-all",
-                "data-[state=active]:text-primary data-[state=active]:border-primary data-[state=active]:bg-transparent data-active:text-primary data-active:bg-transparent data-active:border-primary",
-                "after:hidden" // disable default after element styles from base tabs
+                "flex-1 px-5 py-2.5 rounded-xl text-sm font-medium whitespace-nowrap transition-all",
+                "data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-sm data-[state=active]:font-bold",
+                "text-muted-foreground hover:text-foreground"
               )}
             >
-              AKTIF
+              Aktif
             </TabsTrigger>
             <TabsTrigger
               value="riwayat"
               className={cn(
-                "flex-1 pb-3 relative font-bold text-sm tracking-wider uppercase bg-transparent text-gray-500 rounded-none border-b-2 border-transparent transition-all",
-                "data-[state=active]:text-primary data-[state=active]:border-primary data-[state=active]:bg-transparent data-active:text-primary data-active:bg-transparent data-active:border-primary",
-                "after:hidden"
+                "flex-1 px-5 py-2.5 rounded-xl text-sm font-medium whitespace-nowrap transition-all",
+                "data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-sm data-[state=active]:font-bold",
+                "text-muted-foreground hover:text-foreground"
               )}
             >
-              RIWAYAT
+              Riwayat
             </TabsTrigger>
           </TabsList>
 
