@@ -184,26 +184,18 @@ export default function AdminOrdersPage() {
 
         {/* Tab Navigation & Content */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full flex flex-col gap-6">
-          <TabsList
-            variant="line"
-            className="flex w-full overflow-x-auto hide-scrollbar justify-start border-b border-border bg-transparent p-0 h-auto gap-0"
-          >
+          <TabsList className="inline-flex w-fit max-w-full overflow-x-auto hide-scrollbar justify-start bg-muted/60 p-1.5 rounded-2xl h-auto gap-1 border border-border/50">
             <TabsTrigger
               value="masuk"
-              className={cn(
-                "px-6 py-3 rounded-none border-b-2 text-sm font-semibold whitespace-nowrap bg-transparent hover:bg-transparent after:hidden transition-all duration-200",
-                activeTab === "masuk"
-                  ? "border-primary text-primary font-bold"
-                  : "border-transparent text-muted-foreground hover:text-foreground"
-              )}
+              className="px-5 py-2.5 rounded-xl text-sm font-medium whitespace-nowrap"
             >
               Masuk/Baru
               <span
                 className={cn(
-                  "ml-1.5 px-2 py-0.5 text-[10px] font-bold rounded-full transition-colors",
+                  "ml-2 px-2 py-0.5 text-[10px] font-bold rounded-full transition-colors",
                   activeTab === "masuk"
-                    ? "bg-primary/10 text-primary"
-                    : "bg-muted text-muted-foreground"
+                    ? "bg-primary text-primary-foreground shadow-sm"
+                    : "bg-foreground/10 text-muted-foreground"
                 )}
               >
                 {masukCount}
@@ -211,20 +203,15 @@ export default function AdminOrdersPage() {
             </TabsTrigger>
             <TabsTrigger
               value="proses"
-              className={cn(
-                "px-6 py-3 rounded-none border-b-2 text-sm font-semibold whitespace-nowrap bg-transparent hover:bg-transparent after:hidden transition-all duration-200",
-                activeTab === "proses"
-                  ? "border-primary text-primary font-bold"
-                  : "border-transparent text-muted-foreground hover:text-foreground"
-              )}
+              className="px-5 py-2.5 rounded-xl text-sm font-medium whitespace-nowrap"
             >
               Diproses
               <span
                 className={cn(
-                  "ml-1.5 px-2 py-0.5 text-[10px] font-bold rounded-full transition-colors",
+                  "ml-2 px-2 py-0.5 text-[10px] font-bold rounded-full transition-colors",
                   activeTab === "proses"
-                    ? "bg-primary/10 text-primary"
-                    : "bg-muted text-muted-foreground"
+                    ? "bg-primary text-primary-foreground shadow-sm"
+                    : "bg-foreground/10 text-muted-foreground"
                 )}
               >
                 {prosesCount}
@@ -232,20 +219,15 @@ export default function AdminOrdersPage() {
             </TabsTrigger>
             <TabsTrigger
               value="selesai"
-              className={cn(
-                "px-6 py-3 rounded-none border-b-2 text-sm font-semibold whitespace-nowrap bg-transparent hover:bg-transparent after:hidden transition-all duration-200",
-                activeTab === "selesai"
-                  ? "border-primary text-primary font-bold"
-                  : "border-transparent text-muted-foreground hover:text-foreground"
-              )}
+              className="px-5 py-2.5 rounded-xl text-sm font-medium whitespace-nowrap"
             >
               Selesai
               <span
                 className={cn(
-                  "ml-1.5 px-2 py-0.5 text-[10px] font-bold rounded-full transition-colors",
+                  "ml-2 px-2 py-0.5 text-[10px] font-bold rounded-full transition-colors",
                   activeTab === "selesai"
-                    ? "bg-primary/10 text-primary"
-                    : "bg-muted text-muted-foreground"
+                    ? "bg-primary text-primary-foreground shadow-sm"
+                    : "bg-foreground/10 text-muted-foreground"
                 )}
               >
                 {selesaiCount}
