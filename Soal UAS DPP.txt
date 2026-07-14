@@ -1,0 +1,61 @@
+﻿Mata Kuliah	: Desain Pengalaman Pengguna 
+Dosen Pengampu	: Rizky Aditya Nugroho, S.T., M.Eng.
+Waktu / Tanggal	: 100 Menit / 2 Juli 2026 
+Program Studi	: Sistem Informasi
+Semester	: 6 (Enam) 
+Sifat	: Terbuka
+
+Rancang solusi UX untuk fitur yang dipilih dengan menghasilkan artefak berikut.
+1. Identifikasi Permasalahan. Jelaskan secara singkat:
+    • latar belakang masalah, 
+    • target pengguna, 
+    • tujuan perancangan. 
+2. User Flow. Buat User Flow yang menggambarkan perjalanan pengguna hingga tujuan tercapai.
+3. Task Flow. Buat Task Flow untuk satu aktivitas utama/
+4. Wireframe. Buat wireframe low-fidelity minimal 4 layar, misalnya:
+    • Splash/Login 
+    • Beranda 
+    • Halaman utama fitur 
+    • Halaman konfirmasi 
+Wireframe dapat dibuat menggunakan:
+    • Figma 
+    • Draw.io 
+    • atau aplikasi sejenis. 
+5. High-Fidelity Prototype. Kembangkan wireframe menjadi prototype interaktif dengan memperhatikan:
+    • warna, 
+    • tipografi, 
+    • layout, 
+    • konsistensi, 
+    • ikon, 
+    • design system sederhana. 
+6. Usability Testing
+Lakukan usability testing kepada minimal 3 responden.
+Buat:
+    • tujuan pengujian, 
+    • skenario tugas, 
+    • hasil pengamatan, 
+    • temuan utama. 
+7. Heuristic Evaluation
+Lakukan evaluasi menggunakan 10 Heuristik Nielsen.
+Identifikasi minimal 5 masalah usability beserta:
+    • prinsip yang dilanggar, 
+    • severity rating, 
+    • rekomendasi perbaikan. 
+8. Refleksi Desain
+Tuliskan refleksi singkat (1–2 halaman) mengenai:
+    • bagaimana menjaga kejujuran dalam proses pengujian, 
+    • bagaimana desain Anda memperhatikan inklusivitas dan keadilan bagi pengguna, 
+    • nilai tambah atau dampak sosial dari solusi yang dirancang. 
+
+Luaran yang Dikumpulkan
+Kumpulkan luaran dalam satu folder Google Drive (pastikan bisa dibuka semua orang) yang berisi:
+    1. Laporan proyek (PDF) 
+    2. File desain (Figma atau PDF) 
+    3. User Flow 
+    4. Task Flow 
+    5. Wireframe 
+    6. Prototype 
+    7. Hasil usability testing 
+    8. Heuristic evaluation 
+    9. Link prototype yang dapat diakses
+Tautan Google Drive dikumpulkan di Elin.

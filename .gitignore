@@ -1,0 +1,41 @@
+# ============================================
+# Node / Package Manager
+# ============================================
+node_modules/
+.pnpm-store/
+
+# ============================================
+# Agent / Tool Internal Data (BUKAN bagian project)
+# ============================================
+# CodeGraph - SQLite database untuk internal agent indexing
+.codegraph/
+# Omo - internal agent continuation data
+.omo/
+# OpenCode internal state
+.opencode/
+
+# ============================================
+# OS / Editor Temporary Files
+# ============================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# ============================================
+# Logs & Runtime Artifacts
+# ============================================
+*.log
+daemon.log
+*.pid
+*.db-shm
+*.db-wal
+
+# ============================================
+# Local Environment
+# ============================================
+.env
+.env.local

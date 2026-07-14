@@ -1,0 +1,1742 @@
+<!-- Lacak Pesanan (High-Fidelity) -->
+<!DOCTYPE html><html lang="id"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Lacak Pesanan #PO-102</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700&amp;display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#FF7A00",
+                        "on-primary": "#ffffff",
+                        "background": "#F9FAFB",
+                        "surface": "#ffffff",
+                        "on-surface": "#1F2937",
+                        "on-surface-variant": "#6B7280",
+                        "outline-variant": "#E5E7EB",
+                        "success": "#10B981",
+                        "warning": "#F59E0B",
+                        "surface-container": "#F3F4F6"
+                    },
+                    "borderRadius": {
+                        "2xl": "1rem",
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-margin": "20px",
+                        "stack-lg": "24px",
+                        "stack-md": "16px",
+                        "stack-sm": "8px",
+                        "gutter": "12px"
+                    },
+                    "fontFamily": {
+                        "body": ["Inter", "sans-serif"],
+                        "heading": ["Poppins", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F9FAFB;
+            color: #1F2937;
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col items-center">
+    <!-- Mobile Container -->
+    <main class="w-full max-w-[480px] bg-background min-h-screen relative mx-auto flex flex-col">
+        <!-- Header -->
+        <header class="flex justify-between items-center px-container-margin h-16 w-full bg-surface z-50 border-b border-outline-variant sticky top-0 max-w-[480px]">
+            <button aria-label="Kembali" class="flex items-center text-on-surface transition-colors duration-200 active:scale-95">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+            </button>
+            <h1 class="text-lg font-bold text-on-surface">Lacak Pesanan #PO-102</h1>
+            <div class="w-6 h-6"></div>
+        </header>
+
+        <!-- Main Content Area -->
+        <div class="flex-1 px-container-margin pt-stack-md pb-24 overflow-y-auto space-y-stack-lg">
+            
+            <!-- Order Status Summary -->
+            <section class="bg-surface p-5 rounded-2xl shadow-sm border border-outline-variant flex flex-col gap-4">
+                <div class="flex flex-col gap-1">
+                    <p class="text-xs font-semibold text-on-surface-variant uppercase tracking-widest">Status Pesanan</p>
+                    <div class="flex items-center gap-2">
+                        <div class="w-2 h-2 rounded-full bg-warning animate-pulse"></div>
+                        <span class="text-xl font-bold text-warning uppercase">Diproses</span>
+                    </div>
+                </div>
+                <div class="h-px w-full bg-outline-variant"></div>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-xs text-on-surface-variant">Estimasi Tiba</p>
+                        <p class="text-base font-semibold text-on-surface">24 Okt 2023</p>
+                    </div>
+                    <span class="material-symbols-outlined text-on-surface-variant/30">event</span>
+                </div>
+            </section>
+
+            <!-- Vertical Timeline -->
+            <section class="bg-surface p-5 rounded-2xl shadow-sm border border-outline-variant">
+                <h2 class="text-lg font-bold mb-6 text-on-surface">Riwayat Perjalanan</h2>
+                <div class="relative space-y-10 pl-12">
+                    <!-- Vertical Line -->
+                    <div class="absolute left-[15px] top-4 bottom-4 w-0.5 bg-outline-variant"></div>
+                    
+                    <!-- Step 1: Menunggu Konfirmasi (Completed) -->
+                    <div class="relative">
+                        <div class="absolute -left-[43px] top-0 w-8 h-8 rounded-full bg-success flex items-center justify-center z-10 ring-4 ring-white">
+                            <span class="material-symbols-outlined text-[18px] text-white" style="font-variation-settings: 'FILL' 0; 'wght' : 700;">check</span>
+                        </div>
+                        <h3 class="text-base font-semibold text-on-surface">Menunggu Konfirmasi</h3>
+                        <p class="text-xs text-on-surface-variant mt-0.5">20 Okt 2023, 09:00 WIB</p>
+                        <p class="text-sm text-on-surface-variant mt-2 leading-relaxed">Pesanan Anda telah diterima dan sedang menunggu konfirmasi penjual.</p>
+                    </div>
+
+                    <!-- Step 2: DP Diterima (Completed) -->
+                    <div class="relative">
+                        <div class="absolute -left-[43px] top-0 w-8 h-8 rounded-full bg-success flex items-center justify-center z-10 ring-4 ring-white">
+                            <span class="material-symbols-outlined text-[18px] text-white" style="font-variation-settings: 'FILL' 0; 'wght' : 700;">check</span>
+                        </div>
+                        <h3 class="text-base font-semibold text-on-surface">DP Diterima</h3>
+                        <p class="text-xs text-on-surface-variant mt-0.5">21 Okt 2023, 14:30 WIB</p>
+                        <p class="text-sm text-on-surface-variant mt-2 leading-relaxed">Pembayaran DP telah dikonfirmasi. Pesanan mulai diproduksi.</p>
+                    </div>
+
+                    <!-- Step 3: Dikirim (Current/Active) -->
+                    <div class="relative">
+                        <div class="absolute -left-[43px] top-0 w-8 h-8 rounded-full bg-warning flex items-center justify-center z-10 ring-4 ring-white shadow-lg shadow-warning/20">
+                            <span class="material-symbols-outlined text-[18px] text-white" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+                        </div>
+                        <h3 class="text-base font-bold text-on-surface">Dikirim</h3>
+                        <p class="text-xs font-semibold text-warning mt-0.5">Hari ini, 10:15 WIB</p>
+                        <p class="text-sm text-on-surface-variant mt-2 leading-relaxed">Pesanan sedang dalam perjalanan ke alamat tujuan.</p>
+                        
+                        <!-- Courier Info Card -->
+                        <div class="mt-4 p-4 rounded-xl border border-outline-variant bg-surface-container/50 flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-full bg-white border border-outline-variant flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-primary text-[24px]">person</span>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold text-on-surface">Bpk. Budi</p>
+                                    <p class="text-xs text-on-surface-variant">Kurir Internal Delight Bakery</p>
+                                </div>
+                            </div>
+                            <button class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center shadow-md shadow-primary/20 active:scale-95 transition-transform">
+                                <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">call</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Selesai (Pending) -->
+                    <div class="relative">
+                        <div class="absolute -left-[39px] top-1 w-6 h-6 rounded-full bg-white border-2 border-outline-variant z-10"></div>
+                        <h3 class="text-base font-semibold text-on-surface-variant">Selesai</h3>
+                        <p class="text-sm text-on-surface-variant/60 mt-1 leading-relaxed">Pesanan tiba dan pelunasan selesai.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Order Details Summary -->
+            <section class="bg-surface p-5 rounded-2xl shadow-sm border border-outline-variant space-y-6">
+                <h3 class="text-lg font-bold text-on-surface">Rincian Item</h3>
+                
+                <div class="flex justify-between items-start gap-4">
+                    <div class="flex-1">
+                        <p class="text-sm font-bold text-on-surface">Kaos Sablon Komunitas</p>
+                        <p class="text-xs text-on-surface-variant mt-1">Hitam, Ukuran L (x50)</p>
+                    </div>
+                    <p class="text-sm font-bold text-on-surface whitespace-nowrap">Rp 2.500.000</p>
+                </div>
+
+                <div class="h-px w-full bg-outline-variant"></div>
+
+                <!-- Payment Reminder -->
+                <div class="bg-surface-container p-4 rounded-xl border border-outline-variant">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">info</span>
+                        <p class="text-sm font-bold text-on-surface">Perhatian Pelunasan</p>
+                    </div>
+                    <p class="text-sm text-on-surface-variant leading-relaxed">
+                        Sisa tagihan sebesar <span class="font-bold text-primary">Rp 1.250.000</span> harap
+</p>
+</div></section></div></main></body></html>
+
+<!-- Riwayat Pesanan (High-Fidelity) -->
+<!DOCTYPE html><html lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Sisi Pelanggan - Riwayat Pesanan Saya</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Google Fonts: Poppins & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#FF7A00",
+                    "primary-light": "#FFF3E6",
+                    "background": "#F9FAFB",
+                    "surface": "#FFFFFF",
+                    "on-surface": "#1F2937",
+                    "on-surface-variant": "#6B7280",
+                    "outline-variant": "#E5E7EB",
+                    "amber-custom": "#F59E0B",
+                    "emerald-custom": "#10B981"
+            },
+            "borderRadius": {
+                    "2xl": "1rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-margin": "20px",
+                    "stack-lg": "24px",
+                    "stack-md": "16px",
+                    "stack-sm": "8px",
+                    "gutter": "12px"
+            },
+            "fontFamily": {
+                    "body": ["Inter", "sans-serif"],
+                    "heading": ["Poppins", "sans-serif"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9FAFB;
+        }
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .active-tab-indicator {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #FF7A00;
+            border-radius: 3px 3px 0 0;
+        }
+    </style>
+</head>
+<body class="text-on-surface min-h-screen flex flex-col pt-16 pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-container-margin h-16 bg-surface border-b border-outline-variant">
+<button class="flex items-center justify-center w-10 h-10 text-on-surface transition-colors duration-200 active:scale-95 hover:bg-gray-100 rounded-full">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-xl font-bold tracking-tight text-primary">Delight Bakery</h1>
+<button class="flex items-center justify-center w-10 h-10 text-on-surface transition-colors duration-200 active:scale-95 hover:bg-gray-100 rounded-full">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 flex flex-col max-w-2xl mx-auto w-full px-container-margin py-stack-lg">
+<!-- Page Header -->
+<div class="mb-6">
+<h2 class="text-2xl font-bold text-gray-900">Pesanan Saya</h2>
+</div>
+<!-- Tabs Navigation -->
+<div class="flex border-b border-outline-variant mb-6 w-full relative">
+<button class="flex-1 pb-3 relative font-semibold text-primary text-sm tracking-wide">
+            AKTIF
+            <div class="active-tab-indicator"></div>
+</button>
+<button class="flex-1 pb-3 font-semibold text-on-surface-variant text-sm tracking-wide hover:text-primary transition-colors">
+            RIWAYAT
+        </button>
+</div>
+<!-- Orders List -->
+<div class="flex flex-col gap-5">
+<!-- Order Card 1: Waiting Confirmation -->
+<div class="bg-surface rounded-2xl shadow-sm border border-outline-variant p-4 flex flex-col gap-4 overflow-hidden">
+<div class="flex gap-4 items-start">
+<!-- Food Image -->
+<div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden bg-gray-100">
+<img alt="Katering Box" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+<div class="flex-1 flex flex-col justify-between h-24">
+<div>
+<div class="flex justify-between items-start">
+<p class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-1">PO-2310-001A</p>
+<!-- Status Badge -->
+<span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md text-amber-custom bg-orange-50 ring-1 ring-inset ring-amber-custom/20">
+                                Menunggu Konfirmasi
+                            </span>
+</div>
+<h3 class="text-base font-semibold text-on-surface leading-snug">Paket Katering Box (50 Porsi)</h3>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<p class="text-xs">Kirim: 12 Nov 2023</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-end pt-3 border-t border-gray-100">
+<button class="text-primary font-bold text-xs px-4 py-2 rounded-lg hover:bg-primary-light transition-colors border border-primary">DETAIL PESANAN</button>
+</div>
+</div>
+<!-- Order Card 2: Processed -->
+<div class="bg-surface rounded-2xl shadow-sm border border-outline-variant p-4 flex flex-col gap-4 overflow-hidden">
+<div class="flex gap-4 items-start">
+<!-- Food Image -->
+<div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden bg-gray-100">
+<img alt="Kue Tampah" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+<div class="flex-1 flex flex-col justify-between h-24">
+<div>
+<div class="flex justify-between items-start">
+<p class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-1">PO-2310-088B</p>
+<!-- Status Badge -->
+<span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md text-amber-custom bg-orange-50 ring-1 ring-inset ring-amber-custom/20">
+                                Diproses
+                            </span>
+</div>
+<h3 class="text-base font-semibold text-on-surface leading-snug">Kue Tampah Tradisional Besar</h3>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<p class="text-xs">Kirim: 15 Nov 2023</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-end pt-3 border-t border-gray-100">
+<button class="bg-primary text-white font-bold text-xs px-6 py-2 rounded-lg hover:brightness-110 transition-all shadow-md shadow-primary/20">LACAK PESANAN</button>
+</div>
+</div>
+<!-- Mock Finished Order for visual variety -->
+<div class="bg-surface rounded-2xl shadow-sm border border-outline-variant p-4 flex flex-col gap-4 opacity-75">
+<div class="flex gap-4 items-start">
+<div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden bg-gray-100 grayscale-[50%]">
+<img alt="Donut Package" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+<div class="flex-1 flex flex-col justify-between h-24">
+<div>
+<div class="flex justify-between items-start">
+<p class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-1">PO-2310-042C</p>
+<span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md text-emerald-custom bg-emerald-50 ring-1 ring-inset ring-emerald-custom/20">
+                                Selesai
+                            </span>
+</div>
+<h3 class="text-base font-semibold text-on-surface leading-snug">Paket Donut Mix (24 Pcs)</h3>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<p class="text-xs">Terkirim: 08 Nov 2023</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-end pt-3 border-t border-gray-100">
+<button class="text-on-surface-variant font-bold text-xs px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors border border-gray-200">PESAN LAGI</button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-4 bg-surface md:hidden border-t border-outline-variant shadow-[0_-4px_12px_rgba(0,0,0,0.03)]">
+<!-- Inactive Tab -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 group" href="#">
+<span class="material-symbols-outlined mb-1 group-active:scale-90 transition-transform" data-icon="home">home</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Beranda</span>
+</a>
+<!-- Active Tab (--></nav>
+
+</body></html>
+
+<!-- Pembayaran DP (High-Fidelity) -->
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PO UMKM - Pembayaran &amp; Upload DP</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#FF7A00",
+                        "primary-hover": "#E66E00",
+                        "background": "#F9FAFB",
+                        "surface": "#FFFFFF",
+                        "on-surface": "#1F2937",
+                        "on-surface-variant": "#6B7280",
+                        "outline-variant": "#E5E7EB",
+                        "warning-amber": "#F59E0B"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-margin": "20px",
+                        "stack-lg": "24px",
+                        "stack-md": "16px",
+                        "stack-sm": "8px",
+                        "gutter": "12px"
+                    },
+                    "fontFamily": {
+                        "body": ["Inter", "sans-serif"],
+                        "heading": ["Poppins", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9FAFB;
+        }
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+    </style>
+</head>
+<body class="text-on-surface min-h-screen pb-24 md:pb-8 pt-16 font-body">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-container-margin h-16 bg-surface border-b border-outline-variant shadow-sm">
+<div class="flex items-center gap-3">
+<button class="hover:bg-gray-100 p-2 rounded-full flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-on-surface">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold text-on-surface">Pembayaran &amp; DP</h1>
+</div>
+<div class="flex items-center">
+<button class="hover:bg-gray-100 p-2 rounded-full flex items-center justify-center text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="max-w-md mx-auto p-container-margin space-y-6 pt-6">
+<!-- Rincian Section -->
+<section class="bg-surface rounded-2xl card-shadow p-6 space-y-4">
+<h2 class="text-base font-bold text-on-surface">Rincian Tagihan</h2>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-sm text-on-surface-variant">Subtotal Pesanan</span>
+<span class="text-sm font-medium text-on-surface">Rp 500.000</span>
+</div>
+<div class="border-t border-dashed border-outline-variant pt-3">
+<div class="flex justify-between items-center">
+<span class="text-base font-bold text-on-surface">Total Pembayaran</span>
+<span class="text-base font-bold text-primary">Rp 500.000</span>
+</div>
+</div>
+</div>
+<div class="bg-orange-50 border border-orange-100 rounded-xl p-4 flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-warning-amber text-xl">info</span>
+<span class="text-sm font-semibold text-warning-amber">Wajib DP (Min 50%)</span>
+</div>
+<span class="text-sm font-bold text-warning-amber">Rp 250.000</span>
+</div>
+</section>
+<!-- Bank Selection / Information -->
+<section class="space-y-3">
+<h2 class="text-base font-bold text-on-surface px-1">Pilih Rekening Tujuan</h2>
+<!-- BCA Card -->
+<div class="bg-surface rounded-2xl card-shadow p-5 border-2 border-primary relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-2">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+</div>
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-8 bg-blue-50 rounded flex items-center justify-center text-[10px] font-bold text-blue-800 border border-blue-100">BCA</div>
+<div>
+<p class="text-xs text-on-surface-variant">Bank Central Asia</p>
+<p class="font-semibold text-on-surface">1234567890</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-3 border-t border-outline-variant">
+<span class="text-xs text-on-surface-variant italic">a.n. PO UMKM Sejahtera</span>
+<button class="copy-btn flex items-center gap-1.5 text-xs font-bold text-primary hover:text-primary-hover transition-colors" data-copy="1234567890">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+                    Salin Rekening
+                </button>
+</div>
+</div>
+<!-- Mandiri Card (Inactive) -->
+<div class="bg-surface rounded-2xl card-shadow p-5 border border-transparent opacity-80 hover:opacity-100 transition-opacity">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-8 bg-yellow-50 rounded flex items-center justify-center text-[10px] font-bold text-yellow-700 border border-yellow-100">MANDIRI</div>
+<div>
+<p class="text-xs text-on-surface-variant">Bank Mandiri</p>
+<p class="font-semibold text-on-surface">9876543210</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-3 border-t border-outline-variant">
+<span class="text-xs text-on-surface-variant italic">a.n. PO UMKM Sejahtera</span>
+<button class="copy-btn flex items-center gap-1.5 text-xs font-bold text-primary hover:text-primary-hover transition-colors" data-copy="9876543210">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+                    Salin Rekening
+                </button>
+</div>
+</div>
+</section>
+<!-- Upload Area -->
+<section class="space-y-3">
+<h2 class="text-base font-bold text-on-surface px-1">Bukti Pembayaran</h2>
+<div class="relative">
+<input accept="image/*" class="hidden" id="payment-upload" type="file"/>
+<label class="flex flex-col items-center justify-center w-full h-48 bg-surface rounded-2xl border-2 border-dashed border-outline-variant hover:border-primary hover:bg-orange-50/30 transition-all cursor-pointer group card-shadow" for="payment-upload">
+<div class="w-12 h-12 rounded-full bg-orange-50 flex items-center justify-center mb-3 group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary">add_a_photo</span>
+</div>
+<span class="text-sm font-semibold text-on-surface group-hover:text-primary">Klik untuk unggah foto</span>
+<p class="text-xs text-on-surface-variant mt-1">Format JPG, PNG (Maks 5MB)</p>
+</label>
+</div>
+</section>
+<!-- Action Button -->
+<div class="pt-4 pb-8">
+<button class="w-full bg-primary text-white font-bold text-sm py-4 rounded-2xl shadow-lg shadow-orange-200 hover:bg-primary-hover transition-all active:scale-[0.98] uppercase tracking-wider">
+            Kirim Bukti Pembayaran
+        </button>
+<p class="text-[10px] text-center text-on-surface-variant mt-4 px-4 leading-relaxed">
+            Pastikan bukti transfer yang Anda unggah terlihat jelas dan sesuai dengan nominal tagihan.
+        </p>
+</div>
+</main>
+<script>
+    // Enhanced copy button logic
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const textToCopy = this.getAttribute('data-copy');
+            const originalHTML = this.innerHTML;
+            
+            // In a real app, use navigator.clipboard.writeText(textToCopy)
+            this.innerHTML = `<span class="material-symbols-outlined text-sm">check</span> Tersalin`;
+            this.classList.replace('text-primary', 'text-green-600');
+            
+            setTimeout(() => {
+                this.innerHTML = originalHTML;
+                this.classList.replace('text-green-600', 'text-primary');
+            }, 2000);
+        });
+    });
+
+    // File upload preview simulation
+    const fileInput = document.getElementById('payment-upload');
+    const uploadLabel = fileInput.nextElementSibling;
+
+    fileInput.addEventListener('change', function() {
+        if (this.files && this.files[0]) {
+            const fileName = this.files[0].name;
+            uploadLabel.querySelector('span.text-sm').textContent = fileName;
+            uploadLabel.querySelector('span.material-symbols-outlined').textContent = 'task';
+            uploadLabel.classList.add('border-primary', 'bg-orange-50/20');
+        }
+    });
+</script>
+</body></html>
+
+<!-- Katalog & PO (High-Fidelity) -->
+<!DOCTYPE html><html lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>PO UMKM - Katalog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Poppins:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "primary": "#FF7A00",
+              "on-primary": "#ffffff",
+              "background": "#F9FAFB",
+              "surface": "#ffffff",
+              "on-surface": "#1F2937",
+              "on-surface-variant": "#6B7280",
+              "outline-variant": "#E5E7EB",
+              "surface-container": "#F3F4F6",
+              "secondary-container": "#FFF7ED",
+              "on-secondary-container": "#FF7A00"
+            },
+            "borderRadius": {
+              "DEFAULT": "0.5rem",
+              "lg": "0.75rem",
+              "xl": "1rem",
+              "2xl": "1.5rem",
+              "full": "9999px"
+            },
+            "spacing": {
+              "container-margin": "20px",
+              "stack-lg": "32px",
+              "stack-md": "20px",
+              "stack-sm": "12px",
+              "gutter": "16px"
+            },
+            "fontFamily": {
+              "body": ["Inter", "sans-serif"],
+              "heading": ["Poppins", "sans-serif"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9FAFB;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .product-card-shadow {
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        body.sheet-open { overflow: hidden; }
+    </style>
+</head>
+<body class="text-on-surface min-h-screen relative pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-container-margin h-16 bg-surface/90 backdrop-blur-md border-b border-outline-variant z-40">
+<div class="flex items-center gap-3">
+<button class="text-on-surface p-2 rounded-full active:bg-surface-container transition-colors">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-xl font-bold tracking-tight text-primary">Delight Bakery</h1>
+</div>
+<div class="flex items-center gap-1">
+<button class="text-on-surface p-2 rounded-full active:bg-surface-container transition-colors">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="text-on-surface p-2 rounded-full active:bg-surface-container transition-colors relative">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="absolute top-1.5 right-1.5 w-4 h-4 bg-primary text-[10px] text-white flex items-center justify-center rounded-full font-bold">1</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="pt-20 px-container-margin max-w-4xl mx-auto">
+<!-- Store Info -->
+<section class="mb-8 p-6 bg-surface rounded-2xl border border-outline-variant/50 product-card-shadow">
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">store</span>
+</div>
+<div>
+<h2 class="text-xl font-bold text-on-surface">Delight Bakery</h2>
+<p class="text-on-surface-variant text-sm">Pemesanan khusus kue kering dan basah buatan rumah dari Delight Bakery.</p>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<article class="bg-surface rounded-2xl overflow-hidden border border-outline-variant/30 product-card-shadow group flex flex-col">
+<div class="aspect-square w-full relative overflow-hidden bg-surface-container">
+<img alt="Nastar Klasik" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+<div class="absolute top-2 right-2 bg-white/90 backdrop-blur rounded-full p-1.5 shadow-sm">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="favorite" data-weight="fill">favorite</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="font-semibold text-on-surface mb-1 line-clamp-1">Nastar Klasik</h3>
+<p class="text-primary font-bold text-sm mb-4">Rp 85.000 <span class="text-on-surface-variant font-normal text-xs">/ Toples</span></p>
+<button class="mt-auto w-full bg-primary text-white py-2.5 px-4 rounded-xl font-semibold text-sm hover:bg-[#E66E00] active:scale-95 transition-all" onclick="openSheet('Nastar Klasik', 85000)">Pesan</button>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="bg-surface rounded-2xl overflow-hidden border border-outline-variant/30 product-card-shadow group flex flex-col">
+<div class="aspect-square w-full relative overflow-hidden bg-surface-container">
+<img alt="Kastengel Keju" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="font-semibold text-on-surface mb-1 line-clamp-1">Kastengel Keju</h3>
+<p class="text-primary font-bold text-sm mb-4">Rp 95.000 <span class="text-on-surface-variant font-normal text-xs">/ Toples</span></p>
+<button class="mt-auto w-full bg-primary text-white py-2.5 px-4 rounded-xl font-semibold text-sm hover:bg-[#E66E00] active:scale-95 transition-all" onclick="openSheet('Kastengel Keju', 95000)">Pesan</button>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="bg-surface rounded-2xl overflow-hidden border border-outline-variant/30 product-card-shadow group flex flex-col">
+<div class="aspect-square w-full relative overflow-hidden bg-surface-container">
+<img alt="Brownies Panggang" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="font-semibold text-on-surface mb-1 line-clamp-1">Brownies Panggang</h3>
+<p class="text-primary font-bold text-sm mb-4">Rp 65.000 <span class="text-on-surface-variant font-normal text-xs">/ Loyang</span></p>
+<button class="mt-auto w-full bg-primary text-white py-2.5 px-4 rounded-xl font-semibold text-sm hover:bg-[#E66E00] active:scale-95 transition-all" onclick="openSheet('Brownies Panggang', 65000)">Pesan</button>
+</div>
+</article>
+<!-- Product Card 4 -->
+<article class="bg-surface rounded-2xl overflow-hidden border border-outline-variant/30 product-card-shadow group flex flex-col">
+<div class="aspect-square w-full relative overflow-hidden bg-surface-container">
+<img alt="Bolu Gulung Moka" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="font-semibold text-on-surface mb-1 line-clamp-1">Bolu Gulung Moka</h3>
+<p class="text-primary font-bold text-sm mb-4">Rp 75.000 <span class="text-on-surface-variant font-normal text-xs">/ Roll</span></p>
+<button class="mt-auto w-full bg-primary text-white py-2.5 px-4 rounded-xl font-semibold text-sm hover:bg-[#E66E00] active:scale-95 transition-all" onclick="openSheet('Bolu Gulung Moka', 75000)">Pesan</button>
+</div>
+</article>
+</div>
+</main>
+<!-- Floating Subtotal Bar -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 w-[calc(100%-40px)] max-w-md z-40 transition-all duration-300 translate-y-32 opacity-0" id="floatingSubtotal">
+<div class="glass-effect border border-primary/20 rounded-2xl p-4 shadow-xl flex justify-between items-center">
+<div class="flex flex-col">
+<span class="text-[10px] uppercase tracking-wider font-bold text-primary mb-0.5">Subtotal</span>
+<span class="text-lg font-bold text-on-surface" id="subtotalDisplay">Rp 85.000</span>
+</div>
+<button class="bg-primary text-white px-6 py-2.5 rounded-xl font-bold flex items-center gap-2 shadow-lg shadow-primary/20 active:scale-95 transition-transform" onclick="openSheet()">
+            Pesan
+            <span class="material-symbols-outlined text-[18px]">shopping_basket</span>
+</button>
+</div>
+</div>
+<!-- Modern Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 w-full z-30 flex justify-around items-center h-20 px-6 bg-surface/95 backdrop-blur-md border-t border-outline-variant/50">
+<a class="flex flex-col items-center justify-center group" href="#">
+<div class="w-12 h-8 flex items-center justify-center rounded-full bg-secondary-container text-on-secondary-container mb-1 group-active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="home" data-weight="fill">home</span>
+</div>
+<span class="text-[11px] font-semibold text-primary">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center group" href="#">
+<div class="w-12 h-8 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container mb-1 group-active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+</div>
+<span class="text-[11px] font-medium text-on-surface-variant">Pesanan</span>
+</a>
+<a class="flex flex-col items-center justify-center group" href="#">
+<div class="w-12 h-8 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container mb-1 group-active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</div>
+<span class="text-[11px] font-medium text-on-surface-variant">Profil</span>
+</a>
+</nav>
+<!-- Bottom Sheet Form -->
+<div aria-hidden="true" class="fixed inset-0 bg-black/40 z-50 hidden transition-opacity opacity-0" id="bottomSheetOverlay">
+<div class="absolute bottom-0 left-0 w-full bg-surface border-t border-outline-variant rounded-t-3xl transform translate-y-full transition-transform duration-300 ease-out max-h-[85vh] flex flex-col" id="bottomSheet">
+<!-- Handle & Header -->
+<div class="w-full flex flex-col items-center pt-3 pb-4 shrink-0">
+<div class="w-10 h-1 bg-outline-variant rounded-full mb-5"></div>
+<div class="w-full px-container-margin flex justify-between items-center">
+<h2 class="text-xl font-bold">Detail Pesanan</h2>
+<button class="p-2 -mr-2 text-on-surface-variant bg-surface-container rounded-full" onclick="closeSheet()">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+</div>
+<!-- Scrollable Content -->
+<div class="px-container-margin pb-8 overflow-y-auto flex-grow">
+<!-- Product Summary -->
+<div class="flex gap-4 p-4 bg-surface-container rounded-2xl mb-6">
+<div class="w-20 h-20 bg-outline-variant rounded-xl overflow-hidden shrink-0 shadow-sm" id="sheetProductImg">
+<img alt="Product" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+<div class="flex flex-col justify-center">
+<h3 class="font-bold text-lg" id="sheetProductName">Nastar Klasik</h3>
+<p class="text-primary font-bold" id="sheetProductPrice">Rp 85.000 / Toples</p>
+</div>
+</div>
+<form class="space-y-6">
+<!-- Input Jumlah -->
+<div>
+<label class="block text-sm font-bold mb-3 text-on-surface">Pilih Jumlah</label>
+<div class="flex items-center gap-6">
+<div class="flex items-center bg-surface-container rounded-xl p-1 w-max border border-outline-variant/30">
+<button class="w-10 h-10 rounded-lg flex items-center justify-center bg-white shadow-sm active:scale-90 transition-transform disabled:opacity-30" onclick="updateQty(-1)" type="button">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<input class="w-12 text-center border-none focus:ring-0 font-bold bg-transparent p-0 text-lg" id="qtyInput" min="1" type="number" value="1">
+<button class="w-10 h-10 rounded-lg flex items-center justify-center bg-white shadow-sm active:scale-90 transition-transform" onclick="updateQty(1)" type="button">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<span class="text-on-surface-variant text-sm italic">Minimal order 1 unit</span>
+</div>
+</div>
+<!-- Pilih Tgl Kirim -->
+<div>
+<label class="block text-sm font-bold mb-3 text-on-surface">Jadwal Pengiriman</label>
+<div class="relative">
+<input class="w-full border-outline-variant/50 bg-surface-container rounded-xl p-4 text-sm font-medium focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary appearance-none border" type="date">
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-on-surface-variant pointer-events-none">calendar_today</span>
+</div>
+</div>
+<!-- Catatan -->
+<div>
+<label class="block text-sm font-bold mb-3 text-on-surface">Catatan Khusus</label>
+<textarea class="w-full border-outline-variant/50 bg-surface-container rounded-xl p-4 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary resize-none placeholder-on-surface-variant/50 border" placeholder="Misal: 'Tolong kemas untuk kado ulang tahun'" rows="3"></textarea>
+</div>
+</form>
+</div>
+<!-- Footer Action -->
+<div class="p-container-margin pt-4 pb-8 border-t border-outline-variant bg-surface shrink-0">
+<div class="flex justify-between items-center mb-6">
+<div class="flex flex-col">
+<span class="text-xs text-on-surface-variant font-medium">Total Pembayaran</span>
+<span class="text-2xl font-bold text-on-surface" id="totalPrice">Rp 85.000</span>
+</div>
+</div>
+<button class="w-full bg-primary text-white py-4 px-4 rounded-2xl font-bold text-lg shadow-xl shadow-primary/20 active:scale-[0.98] transition-transform">
+                Lanjut ke Pembayaran
+            </button>
+</div>
+</div>
+</div>
+<script>
+    const overlay = document.getElementById('bottomSheetOverlay');
+    const sheet = document.getElementById('bottomSheet');
+    const floatingSubtotal = document.getElementById('floatingSubtotal');
+    const body = document.body;
+    const qtyInput = document.getElementById('qtyInput');
+    const totalPriceEl = document.getElementById('totalPrice');
+    const subtotalDisplay = document.getElementById('subtotalDisplay');
+    
+    let currentBasePrice = 85000;
+
+    function openSheet(name, price) {
+        if (name) {
+            document.getElementById('sheetProductName').textContent = name;
+            currentBasePrice = price;
+            document.getElementById('sheetProductPrice').textContent = 'Rp ' + price.toLocaleString('id-ID') + ' / Unit';
+            updateTotal(parseInt(qtyInput.value) || 1);
+        }
+
+        overlay.classList.remove('hidden');
+        setTimeout(() => {
+            overlay.classList.remove('opacity-0');
+            sheet.classList.remove('translate-y-full');
+            body.classList.add('sheet-open');
+        }, 10);
+    }
+
+    function closeSheet() {
+        overlay.classList.add('opacity-0');
+        sheet.classList.add('translate-y-full');
+        body.classList.remove('sheet-open');
+        
+        setTimeout(() => {
+            overlay.classList.add('hidden');
+            // Show floating bar after closing sheet if there's a selection
+            showFloatingBar();
+        }, 300);
+    }
+
+    function showFloatingBar() {
+        floatingSubtotal.classList.remove('translate-y-32', 'opacity-0');
+        floatingSubtotal.classList.add('translate-y-0', 'opacity-100');
+    }
+
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closeSheet();
+    });
+
+    function updateQty(change) {
+        let current = parseInt(qtyInput.value) || 1;
+        let newQty = current + change;
+        if (newQty >= 1) {
+            qtyInput.value = newQty;
+            updateTotal(newQty);
+        }
+    }
+
+    qtyInput.addEventListener('change', function() {
+        let val = parseInt(this.value);
+        if (isNaN(val) || val < 1) {
+            this.value = 1;
+            val = 1;
+        }
+        updateTotal(val);</script>
+
+</body></html>
+
+<!-- Login Pelanggan (High-Fidelity) -->
+<!DOCTYPE html><html lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Delight Bakery</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#FF7A00",
+                        "on-primary": "#ffffff",
+                        "background": "#F9FAFB",
+                        "surface": "#ffffff",
+                        "on-surface": "#111827",
+                        "on-surface-variant": "#6B7280",
+                        "outline-variant": "#E5E7EB",
+                        "primary-container": "#FFF7ED",
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-margin": "20px",
+                        "stack-lg": "32px",
+                        "stack-md": "20px",
+                        "stack-sm": "12px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "body": ["Inter", "sans-serif"],
+                        "heading": ["Poppins", "sans-serif"],
+                    },
+                    "boxShadow": {
+                        "soft": "0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05)"
+                    }
+                }
+            }
+        }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+body {
+    font-family: "Inter", sans-serif
+    }
+h1, h2, h3, .font-heading {
+    font-family: "Poppins", sans-serif
+    }
+.bg-bakery {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuB3ehubHQZ-N2qOl4wBz6kxkop44XrOU_gEuNhY0g-DfeHjoG_YFrmUlsrtYioqpAisCunWFGAXH1a2a2Ep5L7nAIgfAIlFzZMUEvD528daJoeVbrZxO3O0etevOayirx7IahLpv5V9buBJFqS4uXqh4dar3oGD2MBvLD0d8TLqVvTV602TmR_q8aA7g21IFmMab5p1RArojWuc5redvPO1SJBiqwgAnrQ8LXYz9xa5BsRE8FePnQiStQ);
+    background-size: cover;
+    background-position: center
+    }</style>
+</head>
+<body class="bg-background text-on-surface min-h-screen relative flex items-center justify-center p-container-margin overflow-hidden">
+<!-- Background Image with Overlay -->
+<div class="fixed inset-0 bg-bakery z-0">
+<div class="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
+</div>
+<!-- Main Container -->
+<main class="w-full max-w-sm flex flex-col gap-stack-lg relative z-10 animate-in fade-in zoom-in duration-500">
+<!-- Brand Logo Area -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-16 h-16 bg-primary rounded-2xl shadow-lg flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-white text-4xl">bakery_dining</span>
+</div>
+<h1 class="text-white text-2xl font-bold tracking-tight">Delight Bakery</h1>
+<p class="text-white/80 text-sm">Rasa Autentik di Setiap Gigitan</p>
+</div>
+<!-- Authentication Card -->
+<div class="bg-surface shadow-soft rounded-2xl flex flex-col overflow-hidden border border-white/20">
+<!-- Tab Switcher -->
+<div class="flex border-b border-outline-variant">
+<button class="flex-1 py-5 font-heading text-sm font-semibold text-on-surface-variant hover:bg-gray-50 transition-colors duration-200">
+                    Masuk
+                </button>
+<button class="flex-1 py-5 font-heading text-sm font-semibold text-primary border-b-2 border-primary bg-primary-container/30">
+                    Daftar
+                </button>
+</div>
+<!-- Form Area -->
+<form class="p-8 flex flex-col gap-5" onsubmit="event.preventDefault();">
+<!-- Input: Nama Lengkap -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant ml-1" for="nama">Nama Lengkap</label>
+<input class="w-full bg-gray-50 border border-outline-variant rounded-xl px-4 py-3.5 text-sm text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all outline-none placeholder:text-gray-400" id="nama" placeholder="Masukkan nama lengkap" type="text">
+</div>
+<!-- Input: No HP -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant ml-1" for="nohp">No HP</label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-sm">+62</span>
+<input class="w-full bg-gray-50 border border-outline-variant rounded-xl pl-12 pr-4 py-3.5 text-sm text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all outline-none placeholder:text-gray-400" id="nohp" placeholder="81234567890" type="tel">
+</div>
+</div>
+<!-- Input: Password -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant ml-1" for="password">Password</label>
+<div class="relative">
+<input class="w-full bg-gray-50 border border-outline-variant rounded-xl px-4 py-3.5 text-sm text-on-surface focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all outline-none placeholder:text-gray-400" id="password" placeholder="Minimal 8 karakter" type="password">
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-on-surface transition-colors p-1" type="button">
+<span class="material-symbols-outlined" style="font-size: 20px;">visibility_off</span>
+</button>
+</div>
+</div>
+<!-- Primary Action -->
+<button class="w-full mt-2 bg-primary text-white py-4 rounded-xl font-heading text-sm font-bold shadow-lg shadow-primary/20 hover:bg-[#E66E00] active:scale-[0.98] transition-all duration-200" type="submit">
+                    Daftar Sekarang
+                </button>
+<p class="text-[11px] text-center text-on-surface-variant px-2 leading-relaxed">
+                    Dengan mendaftar, Anda menyetujui <span class="text-primary font-medium cursor-pointer">Syarat &amp; Ketentuan</span> kami.
+                </p>
+</form>
+</div>
+<!-- Secondary Action -->
+<div class="text-center">
+<button class="font-medium text-sm text-white/90 hover:text-white transition-colors duration-200 flex items-center justify-center gap-2 mx-auto bg-white/10 backdrop-blur-md px-6 py-2.5 rounded-full border border-white/10">
+                Lanjutkan sebagai Tamu
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- Footer Decoration -->
+<div class="fixed bottom-6 text-white/40 text-[10px] uppercase tracking-widest pointer-events-none">© 2024 Delight Bakery Co.</div>
+
+
+</body></html>
+
+<!-- Detail Pesanan Admin (High-Fidelity) -->
+<!DOCTYPE html><html lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Delight Bakery - Detail Pesanan #PO-102</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#1E3A8A",
+                        "on-primary": "#ffffff",
+                        "background": "#F3F4F6",
+                        "surface": "#FFFFFF",
+                        "on-surface": "#111827",
+                        "on-surface-variant": "#4B5563",
+                        "outline-variant": "#E5E7EB",
+                        "success-container": "#ECFDF5",
+                        "on-success-container": "#065F46",
+                        "info-container": "#EFF6FF",
+                        "on-info-container": "#1E40AF"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.375rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-margin": "16px",
+                        "stack-lg": "24px",
+                        "stack-md": "16px",
+                        "stack-sm": "12px",
+                        "gutter": "12px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Poppins", "sans-serif"],
+                        "body": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+        .receipt-dashed {
+            background-image: radial-gradient(circle, #E5E7EB 1px, transparent 1px);
+            background-size: 8px 8px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full bg-surface border-b border-outline-variant z-50 flex justify-between items-center px-container-margin h-16 shadow-sm">
+<div class="flex items-center gap-3">
+<button class="text-on-surface-variant hover:bg-gray-100 p-2 rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold text-on-surface">Detail Pesanan #PO-102</h1>
+</div>
+<button class="text-on-surface-variant hover:bg-gray-100 p-2 rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-20 pb-28 px-container-margin w-full max-w-2xl mx-auto flex flex-col gap-6">
+<!-- Rincian Section -->
+<section class="bg-surface rounded-xl shadow-sm border border-outline-variant overflow-hidden">
+<div class="p-5 border-b border-outline-variant bg-gray-50/50">
+<h2 class="text-base font-semibold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="inventory_2">inventory_2</span>
+                    Rincian Pesanan
+                </h2>
+</div>
+<div class="p-5 flex flex-col gap-4">
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Produk A</span>
+<span class="text-xs text-on-surface-variant">Kategori: Material</span>
+</div>
+<span class="text-sm font-semibold bg-gray-100 px-2 py-1 rounded">x 50</span>
+</div>
+<div class="flex justify-between items-center">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Produk B Custom</span>
+<span class="text-xs text-on-surface-variant">Kategori: Custom Fabric</span>
+</div>
+<span class="text-sm font-semibold bg-gray-100 px-2 py-1 rounded">x 120</span>
+</div>
+</div>
+<div class="mt-2">
+<h3 class="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider mb-2">Catatan Pembeli</h3>
+<div class="bg-info-container/50 p-4 rounded-lg border border-blue-100 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary/20"></div>
+<p class="text-sm text-on-info-container leading-relaxed italic">
+                            "Tolong produk B dicetak logo warna hitam pekat. Jangan lupa packing kayu ya kak."
+                        </p>
+</div>
+</div>
+<div class="flex justify-between items-center py-3 px-4 bg-gray-50 rounded-lg border border-outline-variant mt-2">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-lg" data-icon="calendar_today">calendar_today</span>
+<span class="text-sm">Tgl Kirim Diminta</span>
+</div>
+<span class="text-sm font-bold text-on-surface">24 Okt 2023</span>
+</div>
+</div>
+</section>
+<!-- Status Pembayaran Section -->
+<section class="bg-surface rounded-xl shadow-sm border border-outline-variant overflow-hidden">
+<div class="p-5 border-b border-outline-variant bg-gray-50/50 flex justify-between items-center">
+<h2 class="text-base font-semibold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="payments">payments</span>
+                    Status Pembayaran
+                </h2>
+<span class="text-[10px] font-bold bg-success-container text-on-success-container px-2.5 py-1 rounded-full border border-emerald-200 uppercase tracking-tight">
+                    DP DIBAYAR
+                </span>
+</div>
+<div class="p-5 flex flex-col gap-4">
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-sm text-on-surface-variant">Total Pesanan</span>
+<span class="text-sm font-medium">Rp 5.400.000</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-sm text-on-surface-variant font-medium">DP Dibayarkan (50%)</span>
+<span class="text-sm font-bold text-primary">Rp 2.700.000</span>
+</div>
+</div>
+<div class="mt-2 space-y-2">
+<h3 class="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">Bukti Transfer DP</h3>
+<div class="group relative w-full h-40 border-2 border-dashed border-gray-300 bg-gray-50 rounded-xl flex flex-col items-center justify-center cursor-pointer hover:border-primary hover:bg-blue-50 transition-all duration-300">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors text-4xl" data-icon="image">image</span>
+<span class="text-xs font-medium text-gray-500 group-hover:text-primary transition-colors">Lihat Bukti Transfer</span>
+</div>
+<button class="absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-1 rounded-full shadow-sm hover:bg-white text-gray-500">
+<span class="material-symbols-outlined text-sm" data-icon="close">close</span>
+</button>
+</div>
+</div>
+<div class="relative mt-4 pt-4 border-t border-dashed border-outline-variant">
+<div class="flex justify-between items-center">
+<span class="text-sm font-semibold text-on-surface-variant">Sisa Tagihan</span>
+<span class="text-xl font-bold text-on-surface">Rp 2.700.000</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Fixed Bottom CTA -->
+<div class="fixed bottom-0 left-0 w-full bg-surface/80 backdrop-blur-md border-t border-outline-variant p-4 z-50">
+<div class="max-w-2xl mx-auto flex gap-3">
+<button class="flex-1 py-3.5 px-4 border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 font-semibold rounded-lg active:scale-[0.98] transition-all text-sm">
+                Tolak
+            </button>
+<button class="flex-[2] py-3.5 px-4 bg-primary text-on-primary hover:bg-[#152e6e] font-semibold rounded-lg shadow-lg shadow-blue-900/20 active:scale-[0.98] transition-all text-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg" data-icon="check_circle">check_circle</span>
+                Konfirmasi DP &amp; Proses
+            </button>
+</div>
+</div>
+
+
+</body></html>
+
+<!-- Kelola Pesanan Admin (High-Fidelity) -->
+<!DOCTYPE html><html lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Poppins:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "primary": "#1E3A8A",
+                            "on-primary": "#ffffff",
+                            "secondary": "#505f76",
+                            "background": "#F3F4F6",
+                            "surface": "#ffffff",
+                            "on-surface": "#111827",
+                            "on-surface-variant": "#6B7280",
+                            "outline-variant": "#E5E7EB",
+                            "status-amber": "#F59E0B",
+                            "status-emerald": "#10B981"
+                        },
+                        "borderRadius": {
+                            "DEFAULT": "0.125rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                        },
+                        "spacing": {
+                            "container-margin": "16px",
+                            "stack-lg": "24px",
+                            "stack-md": "16px",
+                            "stack-sm": "8px"
+                        },
+                        "fontFamily": {
+                            "body": ["Inter", "sans-serif"],
+                            "heading": ["Poppins", "sans-serif"]
+                        }
+                    }
+                }
+            }
+        } catch (_e) {}
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="text-on-surface bg-background pb-24 md:pb-8 pt-16 md:pt-20 min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-container-margin h-16 bg-surface z-50 border-b border-outline-variant shadow-sm">
+<div class="flex items-center gap-4">
+<button class="md:hidden p-2 -ml-2 text-primary hover:bg-gray-100 transition-colors rounded-full">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="text-xl font-bold text-primary tracking-tight">Delight Bakery</h1>
+</div>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex items-center gap-6">
+<a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors py-2" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-sm font-medium">Beranda</span>
+</a>
+<a class="flex items-center gap-2 text-primary border-b-2 border-primary py-2" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="text-sm font-bold">Pesanan</span>
+</a>
+<a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors py-2" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-sm font-medium">Profil</span>
+</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="p-2 text-on-surface-variant hover:bg-gray-100 transition-colors rounded-full relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white"></span>
+</button>
+<div class="hidden md:block w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center ml-2 overflow-hidden border border-primary/20">
+<img alt="Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx8MjvHwfF-ysIxQ__2iQb05NbvEEFvKU5IyVefArdBa0ouz8yGi12W5JnENoIF4yDD30WtszLdykkUlag05t4YmG9aUdnThFsC646AeLdrbfFMEyxDTSkCwM7DpfJb6wmjzLaMbZz6PKdQvi1YHujByobT1wHPEODm0Fgm29maS7uZcCdr67PkqrU9Z8CFO0bC8-6gDpblyYhOvrHcsjvBmCqXoqmXO-ndKwk9RYeUMG9yfHDPLzfcA">
+</div>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="max-w-5xl mx-auto px-container-margin mt-6">
+<!-- Page Header & Actions -->
+<div class="mb-stack-lg">
+<h2 class="text-2xl md:text-3xl font-bold mb-stack-md text-slate-900">Kelola Pesanan</h2>
+<div class="flex gap-3">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-12 pl-11 pr-4 bg-surface border-none ring-1 ring-gray-200 rounded-xl focus:ring-2 focus:ring-primary font-body text-sm transition-all shadow-sm" placeholder="Cari ID, Nama Pelanggan..." type="text">
+</div>
+<button class="h-12 px-5 bg-surface ring-1 ring-gray-200 flex items-center justify-center gap-2 hover:bg-gray-50 transition-all rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-on-surface text-[20px]">filter_list</span>
+<span class="hidden md:inline font-medium text-sm">Filter</span>
+</button>
+</div>
+</div>
+<!-- Tab Navigation -->
+<div class="flex overflow-x-auto hide-scrollbar mb-6 border-b border-outline-variant">
+<button class="px-6 py-3 border-b-2 border-primary text-primary font-bold text-sm whitespace-nowrap">Masuk/Baru</button>
+<button class="px-6 py-3 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface font-medium text-sm whitespace-nowrap">Diproses</button>
+<button class="px-6 py-3 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface font-medium text-sm whitespace-nowrap">Selesai</button>
+</div>
+<!-- Order List -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Order Card 1 -->
+<div class="bg-surface rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/30 hover:shadow-md transition-all group cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center overflow-hidden">
+<img alt="Budi" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRcXYqpD9bn7KyRsuYMFSsS3nsyEW7XBH70iAhn0deIxfKaEORrrfe4wYWkIfppmMLbgkVs2K-n7ES7xA_Q_mo12ckBXmTp8a-w92JFj0WGvP5RX6sxujWryjlkYHAtwkGh6m8EnLCgWRXwdSWDuLSdOz6TCKHfNOliyJbIFpM8WuM2FEskQmutkw1G5g--T8x1TZs-nUH3NW0rI5NUhMMfXpQPiHtogQLH0LOmy48jR4VVusTqa8xzg">
+</div>
+<div>
+<span class="text-[11px] font-bold text-on-surface-variant tracking-wider uppercase">#PO-102</span>
+<h3 class="font-bold text-lg text-on-surface">Budi Santoso</h3>
+</div>
+</div>
+<span class="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors text-xl">chevron_right</span>
+</div>
+<div class="grid grid-cols-2 gap-4 bg-gray-50 rounded-lg p-3">
+<div>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant block mb-1">Tgl Kirim</span>
+<span class="text-sm font-medium">24 Okt 2023</span>
+</div>
+<div>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant block mb-1">Status Pembayaran</span>
+<div class="flex items-center gap-1.5 text-status-amber">
+<span class="material-symbols-outlined text-[16px] fill-[1]">pending_actions</span>
+<span class="text-xs font-bold">Menunggu DP</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Order Card 2 -->
+<div class="bg-surface rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/30 hover:shadow-md transition-all group cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center overflow-hidden">
+<img alt="Siti" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyhX3LjoNP7Aa5I0ZKiCXKxP4uyEo7B4BQdMBhYmd9GDDtr6kmA9h99_8HeBEWmoBbl96FS3_bsS6SUetvCA43rbd9_7LGeTDK3TUG1e-JaumEcBrxwxq_v2TIEtfDAkhGRHXrbCvdq-6gHN5ypvUb8J1QtEla1U2vA4U8R5l-uqeyRsb8OKwwq9EjpUaHBvpAq_RLruRRM2HNR3n1R91W2TKsJgEkPqe7fgONXXipj3UE8Q67YmwScA">
+</div>
+<div>
+<span class="text-[11px] font-bold text-on-surface-variant tracking-wider uppercase">#PO-103</span>
+<h3 class="font-bold text-lg text-on-surface">Siti Aminah</h3>
+</div>
+</div>
+<span class="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors text-xl">chevron_right</span>
+</div>
+<div class="grid grid-cols-2 gap-4 bg-gray-50 rounded-lg p-3">
+<div>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant block mb-1">Tgl Kirim</span>
+<span class="text-sm font-medium">25 Okt 2023</span>
+</div>
+<div>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant block mb-1">Status Pembayaran</span>
+<div class="flex items-center gap-1.5 text-status-emerald">
+<span class="material-symbols-outlined text-[16px] fill-[1]">check_circle</span>
+<span class="text-xs font-bold">DP Lunas</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Order Card 3 -->
+<div class="bg-surface rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/30 hover:shadow-md transition-all group cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center overflow-hidden">
+<img alt="Toko" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDyJuItTyLzpFgcphyBNbbCmvfzzJcW3GrZ_PQ8-CJcxo5sOUTcDs9F-gCgNYU1vnMlsLwb14_kM2BbjTdarZW1VfHEGN2cMC_6uONwExazSTG_N8ikCsDURzjRZKS5A3rGb3SuOD9QRhLZRBNe8QDYPe8YlpHy0EtaYjO4r4OeloRu5G7F_mkia9YOfV-IzQ1nEYXUEKSZyP68BY1f0BUi2lYWIGnCtimk81LDLjCaOQ6j_iUVZMmkA">
+</div>
+<div>
+<span class="text-[11px] font-bold text-on-surface-variant tracking-wider uppercase">#PO-104</span>
+<h3 class="font-bold text-lg text-on-surface">Toko Makmur</h3>
+</div>
+</div>
+<span class="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors text-xl">chevron_right</span>
+</div>
+<div class="grid grid-cols-2 gap-4 bg-gray-50 rounded-lg p-3">
+<div>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant block mb-1">Tgl Kirim</span>
+<span class="text-sm font-medium">26 Okt 2023</span>
+</div>
+<div>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant block mb-1">Status Pembayaran</span>
+<div class="flex items-center gap-1.5 text-status-amber">
+<span class="material-symbols-outlined text-[16px] fill-[1]">pending_actions</span>
+<span class="text-xs font-bold">Menunggu DP</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 bg-surface border-t border-outline-variant shadow-[0_-4px_12px_rgba(0,0,0,0.05)] px-4">
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all flex-1" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="text-[10px] font-bold uppercase tracking-wide">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary flex-1 relative" href="#">
+<div class="bg-primary/10 text-primary rounded-xl px-5 py-1.5 mb-1">
+<span class="material-symbols-outlined block fill-[1]">receipt_long</span>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-wide">Pesanan</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all flex-1" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="text-[10px] font-bold uppercase tracking-wide">Profil</span>
+</a>
+</nav>
+
+
+</body></html>
+
+<!-- Dashboard Admin (High-Fidelity) -->
+<!DOCTYPE html><html lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1E3A8A",
+                        "primary-container": "#dce1ff",
+                        "on-primary": "#ffffff",
+                        "background": "#F3F4F6",
+                        "surface": "#FFFFFF",
+                        "on-surface": "#191c1e",
+                        "on-surface-variant": "#444651",
+                        "outline-variant": "#e1e2e4",
+                        "success": "#059669",
+                        "warning": "#D97706",
+                        "secondary": "#505f76",
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "container-margin": "16px",
+                        "stack-lg": "24px",
+                        "stack-md": "16px",
+                        "stack-sm": "8px",
+                        "gutter": "16px"
+                    },
+                    fontFamily: {
+                        "body": ["Inter", "sans-serif"],
+                        "heading": ["Poppins", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-heading { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface pb-24 md:pb-8">
+<!-- TopAppBar-->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-container-margin h-16 bg-surface border-b border-outline-variant shadow-sm">
+<div class="flex items-center gap-4 text-primary hover:bg-gray-100 transition-colors duration-200 active:scale-95 p-2 rounded-full cursor-pointer">
+<span class="material-symbols-outlined">menu</span>
+</div>
+<div class="text-xl font-bold text-primary tracking-tight font-heading">Delight Bakery</div>
+<div class="flex items-center gap-4 text-primary hover:bg-gray-100 transition-colors duration-200 active:scale-95 p-2 rounded-full cursor-pointer relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-surface"></span>
+</div>
+</header>
+<!-- Main Content -->
+<main class="pt-24 px-container-margin max-w-4xl mx-auto flex flex-col gap-stack-lg">
+<!-- Welcome Header -->
+<section>
+<h1 class="text-2xl md:text-3xl font-bold text-gray-900">Halo, Admin!</h1>
+<p class="text-sm md:text-base text-on-surface-variant mt-1">Berikut ringkasan operasional bisnis Anda hari ini.</p>
+</section>
+<!-- Summary Cards Grid (Bento Style) -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Revenue Card -->
+<div class="bg-surface p-stack-md flex flex-col gap-2 rounded-2xl shadow-sm border border-white">
+<div class="flex items-center justify-between">
+<span class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant">Pendapatan</span>
+<div class="p-2 bg-blue-50 rounded-lg text-primary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">payments</span>
+</div>
+</div>
+<div class="text-2xl font-bold text-gray-900">Rp 4.500.000</div>
+<div class="text-xs font-medium text-success flex items-center gap-1 mt-2">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +12% dari minggu lalu
+                </div>
+</div>
+<!-- Active Orders Card -->
+<div class="bg-surface p-stack-md flex flex-col gap-2 rounded-2xl shadow-sm border border-white">
+<div class="flex items-center justify-between">
+<span class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant">Pesanan Aktif</span>
+<div class="p-2 bg-blue-50 rounded-lg text-primary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+</div>
+</div>
+<div class="text-2xl font-bold text-gray-900">24</div>
+<div class="text-xs font-medium text-on-surface-variant mt-2 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> Dalam proses produksi
+                </div>
+</div>
+<!-- Pending DP Card -->
+<div class="bg-surface p-stack-md flex flex-col gap-2 rounded-2xl shadow-sm border border-white">
+<div class="flex items-center justify-between">
+<span class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant">Menunggu DP</span>
+<div class="p-2 bg-blue-50 rounded-lg text-primary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">pending_actions</span>
+</div>
+</div>
+<div class="text-2xl font-bold text-gray-900">8</div>
+<div class="text-xs font-medium text-warning mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">info</span> Butuh konfirmasi
+                </div>
+</div>
+</section>
+<!-- Upcoming Deliveries Section -->
+<section class="flex flex-col gap-stack-md">
+<div class="flex items-center justify-between">
+<h2 class="text-lg font-bold text-gray-900 font-heading">Jadwal Kirim Terdekat</h2>
+<span class="text-xs font-medium text-primary bg-blue-50 px-3 py-1 rounded-full">Hari Ini</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Delivery Item 1 -->
+<div class="bg-surface p-4 rounded-2xl shadow-sm border border-white flex items-center justify-between hover:border-primary/20 transition-all duration-200 group cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex w-10 h-10 items-center justify-center bg-gray-50 rounded-xl text-on-surface-variant">
+<span class="material-symbols-outlined">package_2</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-bold text-primary">ORD-0921</span>
+<span class="text-sm text-on-surface-variant font-medium">Katering Bu Yayuk <span class="text-xs opacity-60 ml-1">• 50 Box</span></span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1.5">
+<span class="text-[10px] font-bold text-primary bg-blue-50 px-2 py-0.5 rounded-md">10:00 WIB</span>
+<span class="text-[11px] font-bold text-success flex items-center gap-1 uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-success"></span> Siap Kirim
+                        </span>
+</div>
+</div>
+<!-- Delivery Item 2 -->
+<div class="bg-surface p-4 rounded-2xl shadow-sm border border-white flex items-center justify-between hover:border-primary/20 transition-all duration-200 group cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex w-10 h-10 items-center justify-center bg-gray-50 rounded-xl text-on-surface-variant">
+<span class="material-symbols-outlined">package_2</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-bold text-primary">ORD-0925</span>
+<span class="text-sm text-on-surface-variant font-medium">Toko Kopi Maju <span class="text-xs opacity-60 ml-1">• 100 Pcs</span></span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1.5">
+<span class="text-[10px] font-bold text-primary bg-blue-50 px-2 py-0.5 rounded-md">14:00 WIB</span>
+<span class="text-[11px] font-bold text-warning flex items-center gap-1 uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-warning"></span> Proses Packing
+                        </span>
+</div>
+</div>
+<!-- Delivery Item 3 -->
+<div class="bg-surface p-4 rounded-2xl shadow-sm border border-white flex items-center justify-between hover:border-primary/20 transition-all duration-200 group cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex w-10 h-10 items-center justify-center bg-gray-50 rounded-xl text-on-surface-variant">
+<span class="material-symbols-outlined">package_2</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-bold text-primary">ORD-0928</span>
+<span class="text-sm text-on-surface-variant font-medium">Roti Panggang 88 <span class="text-xs opacity-60 ml-1">• 30 Loyang</span></span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1.5">
+<span class="text-[10px] font-bold text-primary bg-blue-50 px-2 py-0.5 rounded-md">16:30 WIB</span>
+<span class="text-[11px] font-bold text-gray-500 flex items-center gap-1 uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> Menunggu Kurir
+                        </span>
+</div>
+</div>
+</div>
+<button class="mt-2 self-center md:self-start bg-primary text-white font-semibold text-sm px-6 py-2.5 rounded-full hover:bg-blue-800 transition-all duration-200 shadow-md flex items-center gap-2">
+                Lihat Semua Jadwal <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-4 bg-surface border-t border-outline-variant pb-4 shadow-[0_-4px_10px_rgba(0,0,0,0.03)]">
+<!-- Active: Beranda -->
+<a class="flex flex-col items-center justify-center text-primary group transition-all" href="#">
+<div class="bg-blue-100/50 p-2 px-5 rounded-2xl mb-1 group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-wider">Beranda</span>
+</a>
+<!-- Inactive: Pesanan -->
+<a class="flex flex-col items-center justify-center text-gray-400 group transition-all hover:text-primary" href="#">
+<div class="p-2 px-5 rounded-2xl mb-1 group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined">receipt_long</span>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-wider">Pesanan</span>
+</a>
+<!-- Inactive: Profil -->
+<a class="flex flex-col items-center justify-center text-gray-400 group transition-all hover:text-primary" href="#">
+<div class="p-2 px-5 rounded-2xl mb-1 group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined">person</span>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-wider">Profil</span>
+</a>
+</nav>
+
+
+</body></html>
+
+<!-- Login Admin (High-Fidelity) -->
+<!DOCTYPE html><html lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Poppins:wght@600;700&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#1E3A8A",
+                        "on-primary": "#ffffff",
+                        "background": "#F3F4F6",
+                        "surface": "#FFFFFF",
+                        "on-surface": "#111827",
+                        "on-surface-variant": "#6B7280",
+                        "outline-variant": "#E5E7EB"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-margin": "16px",
+                        "stack-lg": "24px",
+                        "stack-md": "16px",
+                        "stack-sm": "8px"
+                    },
+                    "fontFamily": {
+                        "body": ["Inter", "sans-serif"],
+                        "heading": ["Poppins", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col items-center justify-center p-container-margin">
+<main class="w-full max-w-[420px] flex flex-col gap-stack-lg">
+<!-- Logo Section -->
+<header class="flex flex-col items-center gap-3 mb-2">
+<div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-on-primary text-[36px]">business_center</span>
+</div>
+<div class="text-center">
+<h2 class="text-primary font-bold text-xl tracking-tight">Delight Bakery</h2>
+</div>
+</header>
+<!-- Login Card -->
+<section class="bg-surface border border-outline-variant rounded-2xl p-8 shadow-sm">
+<div class="text-center mb-8">
+<h1 class="text-2xl font-bold text-on-surface">Login Pemilik</h1>
+<p class="text-on-surface-variant text-sm mt-1">Silakan masuk ke akun pengelola Anda</p>
+</div>
+<form action="#" class="flex flex-col gap-5" method="POST">
+<!-- Email Field -->
+<div class="flex flex-col gap-1.5">
+<label class="text-sm font-medium text-on-surface" for="email">Email / No. HP</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] group-focus-within:text-primary transition-colors">mail</span>
+</div>
+<input class="w-full bg-surface border border-outline-variant rounded-xl pl-11 pr-4 py-3 text-sm focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all placeholder:text-on-surface-variant/50" id="email" name="email" placeholder="contoh@email.com" type="text">
+</div>
+</div>
+<!-- Password Field -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<label class="text-sm font-medium text-on-surface" for="password">Password</label>
+<a class="text-xs font-semibold text-primary hover:underline" href="#">Lupa Password?</a>
+</div>
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] group-focus-within:text-primary transition-colors">lock</span>
+</div>
+<input class="w-full bg-surface border border-outline-variant rounded-xl pl-11 pr-4 py-3 text-sm focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all placeholder:text-on-surface-variant/50" id="password" name="password" placeholder="••••••••" type="password">
+</div>
+</div>
+<!-- Submit Button -->
+<div class="mt-2">
+<button class="w-full bg-primary text-on-primary py-3.5 px-4 rounded-xl font-semibold text-sm hover:bg-opacity-90 active:scale-[0.98] transition-all shadow-md shadow-primary/10 flex items-center justify-center gap-2" type="submit">
+                        Masuk Ke Dashboard
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</form>
+</section>
+<!-- Footer Info -->
+<footer class="text-center">
+<p class="text-on-surface-variant text-xs">© 2024 Delight Bakery. Seluruh Hak Cipta Dilindungi.</p>
+</footer>
+</main>
+
+
+</body></html>

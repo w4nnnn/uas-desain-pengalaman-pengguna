@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Sisi Pelanggan - Riwayat Pesanan Saya</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Google Fonts: Poppins & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#FF7A00",
+                    "primary-light": "#FFF3E6",
+                    "background": "#F9FAFB",
+                    "surface": "#FFFFFF",
+                    "on-surface": "#1F2937",
+                    "on-surface-variant": "#6B7280",
+                    "outline-variant": "#E5E7EB",
+                    "amber-custom": "#F59E0B",
+                    "emerald-custom": "#10B981"
+            },
+            "borderRadius": {
+                    "2xl": "1rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-margin": "20px",
+                    "stack-lg": "24px",
+                    "stack-md": "16px",
+                    "stack-sm": "8px",
+                    "gutter": "12px"
+            },
+            "fontFamily": {
+                    "body": ["Inter", "sans-serif"],
+                    "heading": ["Poppins", "sans-serif"]
+            }
+          }
+        }
+      }
+    </script>
+<link rel="stylesheet" href="../assets/css/global.css">
+</head>
+<body class="text-on-surface min-h-screen flex flex-col pt-16 pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-container-margin h-16 bg-surface border-b border-outline-variant">
+<button class="flex items-center justify-center w-10 h-10 text-on-surface transition-colors duration-200 active:scale-95 hover:bg-gray-100 rounded-full">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-xl font-bold tracking-tight text-primary">Delight Bakery</h1>
+<button class="flex items-center justify-center w-10 h-10 text-on-surface transition-colors duration-200 active:scale-95 hover:bg-gray-100 rounded-full">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 flex flex-col max-w-2xl mx-auto w-full px-container-margin py-stack-lg">
+<!-- Page Header -->
+<div class="mb-6">
+<h2 class="text-2xl font-bold text-gray-900">Pesanan Saya</h2>
+</div>
+<!-- Tabs Navigation -->
+<div class="flex border-b border-outline-variant mb-6 w-full relative">
+<button class="flex-1 pb-3 relative font-semibold text-primary text-sm tracking-wide">
+            AKTIF
+            <div class="active-tab-indicator"></div>
+</button>
+<button class="flex-1 pb-3 font-semibold text-on-surface-variant text-sm tracking-wide hover:text-primary transition-colors">
+            RIWAYAT
+        </button>
+</div>
+<!-- Orders List -->
+<div class="flex flex-col gap-5">
+<!-- Order Card 1: Waiting Confirmation -->
+<div class="bg-surface rounded-2xl shadow-sm border border-outline-variant p-4 flex flex-col gap-4 overflow-hidden">
+<div class="flex gap-4 items-start">
+<!-- Food Image -->
+<div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden bg-gray-100">
+<img alt="Katering Box" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+<div class="flex-1 flex flex-col justify-between h-24">
+<div>
+<div class="flex justify-between items-start">
+<p class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-1">PO-2310-001A</p>
+<!-- Status Badge -->
+<span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md text-amber-custom bg-orange-50 ring-1 ring-inset ring-amber-custom/20">
+                                Menunggu Konfirmasi
+                            </span>
+</div>
+<h3 class="text-base font-semibold text-on-surface leading-snug">Paket Katering Box (50 Porsi)</h3>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<p class="text-xs">Kirim: 12 Nov 2023</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-end pt-3 border-t border-gray-100">
+<button class="text-primary font-bold text-xs px-4 py-2 rounded-lg hover:bg-primary-light transition-colors border border-primary">DETAIL PESANAN</button>
+</div>
+</div>
+<!-- Order Card 2: Processed -->
+<div class="bg-surface rounded-2xl shadow-sm border border-outline-variant p-4 flex flex-col gap-4 overflow-hidden">
+<div class="flex gap-4 items-start">
+<!-- Food Image -->
+<div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden bg-gray-100">
+<img alt="Kue Tampah" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+<div class="flex-1 flex flex-col justify-between h-24">
+<div>
+<div class="flex justify-between items-start">
+<p class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-1">PO-2310-088B</p>
+<!-- Status Badge -->
+<span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md text-amber-custom bg-orange-50 ring-1 ring-inset ring-amber-custom/20">
+                                Diproses
+                            </span>
+</div>
+<h3 class="text-base font-semibold text-on-surface leading-snug">Kue Tampah Tradisional Besar</h3>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<p class="text-xs">Kirim: 15 Nov 2023</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-end pt-3 border-t border-gray-100">
+<button onclick="window.location.href='lacak-pesanan.html'" class="bg-primary text-white font-bold text-xs px-6 py-2 rounded-lg hover:brightness-110 transition-all shadow-md shadow-primary/20">LACAK PESANAN</button>
+</div>
+</div>
+<!-- Mock Finished Order for visual variety -->
+<div class="bg-surface rounded-2xl shadow-sm border border-outline-variant p-4 flex flex-col gap-4 opacity-75">
+<div class="flex gap-4 items-start">
+<div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden bg-gray-100 grayscale-[50%]">
+<img alt="Donut Package" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+<div class="flex-1 flex flex-col justify-between h-24">
+<div>
+<div class="flex justify-between items-start">
+<p class="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-1">PO-2310-042C</p>
+<span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md text-emerald-custom bg-emerald-50 ring-1 ring-inset ring-emerald-custom/20">
+                                Selesai
+                            </span>
+</div>
+<h3 class="text-base font-semibold text-on-surface leading-snug">Paket Donut Mix (24 Pcs)</h3>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<p class="text-xs">Terkirim: 08 Nov 2023</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-end pt-3 border-t border-gray-100">
+<button class="text-on-surface-variant font-bold text-xs px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors border border-gray-200">PESAN LAGI</button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-4 bg-surface md:hidden border-t border-outline-variant shadow-[0_-4px_12px_rgba(0,0,0,0.03)]">
+<!-- Inactive Tab -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 group" href="#">
+<span class="material-symbols-outlined mb-1 group-active:scale-90 transition-transform" data-icon="home">home</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Beranda</span>
+</a>
+<!-- Active Tab (--></nav>
+
+<script src="../assets/js/constants.js"></script>
+<script src="../assets/js/customer.js"></script>
+</body></html>
+
+<!-- Pembayaran DP (High-Fidelity) -->

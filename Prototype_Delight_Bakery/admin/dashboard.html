@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1E3A8A",
+                        "primary-container": "#dce1ff",
+                        "on-primary": "#ffffff",
+                        "background": "#F3F4F6",
+                        "surface": "#FFFFFF",
+                        "on-surface": "#191c1e",
+                        "on-surface-variant": "#444651",
+                        "outline-variant": "#e1e2e4",
+                        "success": "#059669",
+                        "warning": "#D97706",
+                        "secondary": "#505f76",
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "container-margin": "16px",
+                        "stack-lg": "24px",
+                        "stack-md": "16px",
+                        "stack-sm": "8px",
+                        "gutter": "16px"
+                    },
+                    fontFamily: {
+                        "body": ["Inter", "sans-serif"],
+                        "heading": ["Poppins", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<link rel="stylesheet" href="../assets/css/global.css">
+</head>
+<body class="bg-background text-on-surface pb-24 md:pb-8">
+<!-- TopAppBar-->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-container-margin h-16 bg-surface border-b border-outline-variant shadow-sm">
+<div class="flex items-center gap-4 text-primary hover:bg-gray-100 transition-colors duration-200 active:scale-95 p-2 rounded-full cursor-pointer">
+<span class="material-symbols-outlined">menu</span>
+</div>
+<div class="text-xl font-bold text-primary tracking-tight font-heading">Delight Bakery</div>
+<div class="flex items-center gap-4 text-primary hover:bg-gray-100 transition-colors duration-200 active:scale-95 p-2 rounded-full cursor-pointer relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-surface"></span>
+</div>
+</header>
+<!-- Main Content -->
+<main class="pt-24 px-container-margin max-w-4xl mx-auto flex flex-col gap-stack-lg">
+<!-- Welcome Header -->
+<section>
+<h1 class="text-2xl md:text-3xl font-bold text-gray-900">Halo, Admin!</h1>
+<p class="text-sm md:text-base text-on-surface-variant mt-1">Berikut ringkasan operasional bisnis Anda hari ini.</p>
+</section>
+<!-- Summary Cards Grid (Bento Style) -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Revenue Card -->
+<div class="bg-surface p-stack-md flex flex-col gap-2 rounded-2xl shadow-sm border border-white">
+<div class="flex items-center justify-between">
+<span class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant">Pendapatan</span>
+<div class="p-2 bg-blue-50 rounded-lg text-primary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">payments</span>
+</div>
+</div>
+<div class="text-2xl font-bold text-gray-900">Rp 4.500.000</div>
+<div class="text-xs font-medium text-success flex items-center gap-1 mt-2">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +12% dari minggu lalu
+                </div>
+</div>
+<!-- Active Orders Card -->
+<div class="bg-surface p-stack-md flex flex-col gap-2 rounded-2xl shadow-sm border border-white">
+<div class="flex items-center justify-between">
+<span class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant">Pesanan Aktif</span>
+<div class="p-2 bg-blue-50 rounded-lg text-primary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+</div>
+</div>
+<div class="text-2xl font-bold text-gray-900">24</div>
+<div class="text-xs font-medium text-on-surface-variant mt-2 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> Dalam proses produksi
+                </div>
+</div>
+<!-- Pending DP Card -->
+<div class="bg-surface p-stack-md flex flex-col gap-2 rounded-2xl shadow-sm border border-white">
+<div class="flex items-center justify-between">
+<span class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant">Menunggu DP</span>
+<div class="p-2 bg-blue-50 rounded-lg text-primary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">pending_actions</span>
+</div>
+</div>
+<div class="text-2xl font-bold text-gray-900">8</div>
+<div class="text-xs font-medium text-warning mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">info</span> Butuh konfirmasi
+                </div>
+</div>
+</section>
+<!-- Upcoming Deliveries Section -->
+<section class="flex flex-col gap-stack-md">
+<div class="flex items-center justify-between">
+<h2 class="text-lg font-bold text-gray-900 font-heading">Jadwal Kirim Terdekat</h2>
+<span class="text-xs font-medium text-primary bg-blue-50 px-3 py-1 rounded-full">Hari Ini</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Delivery Item 1 -->
+<div class="bg-surface p-4 rounded-2xl shadow-sm border border-white flex items-center justify-between hover:border-primary/20 transition-all duration-200 group cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex w-10 h-10 items-center justify-center bg-gray-50 rounded-xl text-on-surface-variant">
+<span class="material-symbols-outlined">package_2</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-bold text-primary">ORD-0921</span>
+<span class="text-sm text-on-surface-variant font-medium">Katering Bu Yayuk <span class="text-xs opacity-60 ml-1">• 50 Box</span></span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1.5">
+<span class="text-[10px] font-bold text-primary bg-blue-50 px-2 py-0.5 rounded-md">10:00 WIB</span>
+<span class="text-[11px] font-bold text-success flex items-center gap-1 uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-success"></span> Siap Kirim
+                        </span>
+</div>
+</div>
+<!-- Delivery Item 2 -->
+<div class="bg-surface p-4 rounded-2xl shadow-sm border border-white flex items-center justify-between hover:border-primary/20 transition-all duration-200 group cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex w-10 h-10 items-center justify-center bg-gray-50 rounded-xl text-on-surface-variant">
+<span class="material-symbols-outlined">package_2</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-bold text-primary">ORD-0925</span>
+<span class="text-sm text-on-surface-variant font-medium">Toko Kopi Maju <span class="text-xs opacity-60 ml-1">• 100 Pcs</span></span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1.5">
+<span class="text-[10px] font-bold text-primary bg-blue-50 px-2 py-0.5 rounded-md">14:00 WIB</span>
+<span class="text-[11px] font-bold text-warning flex items-center gap-1 uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-warning"></span> Proses Packing
+                        </span>
+</div>
+</div>
+<!-- Delivery Item 3 -->
+<div class="bg-surface p-4 rounded-2xl shadow-sm border border-white flex items-center justify-between hover:border-primary/20 transition-all duration-200 group cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex w-10 h-10 items-center justify-center bg-gray-50 rounded-xl text-on-surface-variant">
+<span class="material-symbols-outlined">package_2</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-bold text-primary">ORD-0928</span>
+<span class="text-sm text-on-surface-variant font-medium">Roti Panggang 88 <span class="text-xs opacity-60 ml-1">• 30 Loyang</span></span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1.5">
+<span class="text-[10px] font-bold text-primary bg-blue-50 px-2 py-0.5 rounded-md">16:30 WIB</span>
+<span class="text-[11px] font-bold text-gray-500 flex items-center gap-1 uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> Menunggu Kurir
+                        </span>
+</div>
+</div>
+</div>
+<button onclick="window.location.href='kelola-pesanan.html'" class="mt-2 self-center md:self-start bg-primary text-white font-semibold text-sm px-6 py-2.5 rounded-full hover:bg-blue-800 transition-all duration-200 shadow-md flex items-center gap-2">
+                Lihat Semua Jadwal <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-4 bg-surface border-t border-outline-variant shadow-[0_-4px_10px_rgba(0,0,0,0.03)]">
+<!-- Active: Beranda -->
+<a class="flex flex-col items-center justify-center text-primary flex-1 relative" href="dashboard.html">
+<div class="bg-primary/10 text-primary rounded-xl px-5 py-1.5 mb-1 group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined block fill-[1]" style="font-variation-settings: 'FILL' 1;">home</span>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-wide">Beranda</span>
+</a>
+<!-- Inactive: Pesanan -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all flex-1" href="kelola-pesanan.html">
+<span class="material-symbols-outlined mb-1">receipt_long</span>
+<span class="text-[10px] font-bold uppercase tracking-wide">Pesanan</span>
+</a>
+<!-- Inactive: Profil -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all flex-1" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="text-[10px] font-bold uppercase tracking-wide">Profil</span>
+</a>
+</nav>
+
+
+</body></html>
+
+<!-- Login Admin (High-Fidelity) -->

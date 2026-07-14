@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>PO UMKM - Katalog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Poppins:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "primary": "#FF7A00",
+              "on-primary": "#ffffff",
+              "background": "#F9FAFB",
+              "surface": "#ffffff",
+              "on-surface": "#1F2937",
+              "on-surface-variant": "#6B7280",
+              "outline-variant": "#E5E7EB",
+              "surface-container": "#F3F4F6",
+              "secondary-container": "#FFF7ED",
+              "on-secondary-container": "#FF7A00"
+            },
+            "borderRadius": {
+              "DEFAULT": "0.5rem",
+              "lg": "0.75rem",
+              "xl": "1rem",
+              "2xl": "1.5rem",
+              "full": "9999px"
+            },
+            "spacing": {
+              "container-margin": "20px",
+              "stack-lg": "32px",
+              "stack-md": "20px",
+              "stack-sm": "12px",
+              "gutter": "16px"
+            },
+            "fontFamily": {
+              "body": ["Inter", "sans-serif"],
+              "heading": ["Poppins", "sans-serif"]
+            }
+          }
+        }
+      }
+    </script>
+<link rel="stylesheet" href="../assets/css/global.css">
+</head>
+<body class="text-on-surface min-h-screen relative pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-container-margin h-16 bg-surface/90 backdrop-blur-md border-b border-outline-variant z-40">
+<div class="flex items-center gap-3">
+<button class="text-on-surface p-2 rounded-full active:bg-surface-container transition-colors" onclick="window.location.href='login.html'">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-xl font-bold tracking-tight text-primary">Delight Bakery</h1>
+</div>
+<div class="flex items-center gap-1">
+<button class="text-on-surface p-2 rounded-full active:bg-surface-container transition-colors">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="text-on-surface p-2 rounded-full active:bg-surface-container transition-colors relative">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="absolute top-1.5 right-1.5 w-4 h-4 bg-primary text-[10px] text-white flex items-center justify-center rounded-full font-bold">1</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="pt-20 px-container-margin max-w-4xl mx-auto">
+<!-- Store Info -->
+<section class="mb-8 p-6 bg-surface rounded-2xl border border-outline-variant/50 product-card-shadow">
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">store</span>
+</div>
+<div>
+<h2 class="text-xl font-bold text-on-surface">Delight Bakery</h2>
+<p class="text-on-surface-variant text-sm">Pemesanan khusus kue kering dan basah buatan rumah dari Delight Bakery.</p>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+
+<!-- Product Card 2 -->
+
+<!-- Product Card 3 -->
+
+<!-- Product Card 4 -->
+
+</div>
+</main>
+<!-- Floating Subtotal Bar -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 w-[calc(100%-40px)] max-w-md z-40 transition-all duration-300 translate-y-32 opacity-0" id="floatingSubtotal">
+<div class="glass-effect border border-primary/20 rounded-2xl p-4 shadow-xl flex justify-between items-center">
+<div class="flex flex-col">
+<span class="text-[10px] uppercase tracking-wider font-bold text-primary mb-0.5">Subtotal</span>
+<span class="text-lg font-bold text-on-surface" id="subtotalDisplay">Rp 85.000</span>
+</div>
+<button class="bg-primary text-white px-6 py-2.5 rounded-xl font-bold flex items-center gap-2 shadow-lg shadow-primary/20 active:scale-95 transition-transform" onclick="openSheet()">
+            Pesan
+            <span class="material-symbols-outlined text-[18px]">shopping_basket</span>
+</button>
+</div>
+</div>
+<!-- Modern Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 w-full z-30 flex justify-around items-center h-20 px-6 bg-surface/95 backdrop-blur-md border-t border-outline-variant/50">
+<a class="flex flex-col items-center justify-center group" href="#">
+<div class="w-12 h-8 flex items-center justify-center rounded-full bg-secondary-container text-on-secondary-container mb-1 group-active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="home" data-weight="fill">home</span>
+</div>
+<span class="text-[11px] font-semibold text-primary">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center group" href="riwayat-pesanan.html">
+<div class="w-12 h-8 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container mb-1 group-active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+</div>
+<span class="text-[11px] font-medium text-on-surface-variant">Pesanan</span>
+</a>
+<a class="flex flex-col items-center justify-center group" href="#">
+<div class="w-12 h-8 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container mb-1 group-active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</div>
+<span class="text-[11px] font-medium text-on-surface-variant">Profil</span>
+</a>
+</nav>
+<!-- Bottom Sheet Form -->
+<div aria-hidden="true" class="fixed inset-0 bg-black/40 z-50 hidden transition-opacity opacity-0" id="bottomSheetOverlay">
+<div class="absolute bottom-0 left-0 w-full bg-surface border-t border-outline-variant rounded-t-3xl transform translate-y-full transition-transform duration-300 ease-out max-h-[85vh] flex flex-col" id="bottomSheet">
+<!-- Handle & Header -->
+<div class="w-full flex flex-col items-center pt-3 pb-4 shrink-0">
+<div class="w-10 h-1 bg-outline-variant rounded-full mb-5"></div>
+<div class="w-full px-container-margin flex justify-between items-center">
+<h2 class="text-xl font-bold">Detail Pesanan</h2>
+<button class="p-2 -mr-2 text-on-surface-variant bg-surface-container rounded-full" onclick="closeSheet()">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+</div>
+<!-- Scrollable Content -->
+<div class="px-container-margin pb-8 overflow-y-auto flex-grow">
+<!-- Product Summary -->
+<div class="flex gap-4 p-4 bg-surface-container rounded-2xl mb-6">
+<div class="w-20 h-20 bg-outline-variant rounded-xl overflow-hidden shrink-0 shadow-sm" id="sheetProductImg">
+<img alt="Product" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+<div class="flex flex-col justify-center">
+<h3 class="font-bold text-lg" id="sheetProductName">Nastar Klasik</h3>
+<p class="text-primary font-bold" id="sheetProductPrice">Rp 85.000 / Toples</p>
+</div>
+</div>
+<form class="space-y-6">
+<!-- Input Jumlah -->
+<div>
+<label class="block text-sm font-bold mb-3 text-on-surface">Pilih Jumlah</label>
+<div class="flex items-center gap-6">
+<div class="flex items-center bg-surface-container rounded-xl p-1 w-max border border-outline-variant/30">
+<button class="w-10 h-10 rounded-lg flex items-center justify-center bg-white shadow-sm active:scale-90 transition-transform disabled:opacity-30" onclick="updateQty(-1)" type="button">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<input class="w-12 text-center border-none focus:ring-0 font-bold bg-transparent p-0 text-lg" id="qtyInput" min="1" type="number" value="1">
+<button class="w-10 h-10 rounded-lg flex items-center justify-center bg-white shadow-sm active:scale-90 transition-transform" onclick="updateQty(1)" type="button">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<span class="text-on-surface-variant text-sm italic">Minimal order 1 unit</span>
+</div>
+</div>
+<!-- Pilih Tgl Kirim -->
+<div>
+<label class="block text-sm font-bold mb-3 text-on-surface">Jadwal Pengiriman</label>
+<div class="relative">
+<input class="w-full border-outline-variant/50 bg-surface-container rounded-xl p-4 text-sm font-medium focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary appearance-none border" type="date">
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-on-surface-variant pointer-events-none">calendar_today</span>
+</div>
+</div>
+<!-- Catatan -->
+<div>
+<label class="block text-sm font-bold mb-3 text-on-surface">Catatan Khusus</label>
+<textarea class="w-full border-outline-variant/50 bg-surface-container rounded-xl p-4 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary resize-none placeholder-on-surface-variant/50 border" placeholder="Misal: 'Tolong kemas untuk kado ulang tahun'" rows="3"></textarea>
+</div>
+</form>
+</div>
+<!-- Footer Action -->
+<div class="p-container-margin pt-4 pb-8 border-t border-outline-variant bg-surface shrink-0">
+<div class="flex justify-between items-center mb-6">
+<div class="flex flex-col">
+<span class="text-xs text-on-surface-variant font-medium">Total Pembayaran</span>
+<span class="text-2xl font-bold text-on-surface" id="totalPrice">Rp 85.000</span>
+</div>
+</div>
+<button class="w-full bg-primary text-white py-4 px-4 rounded-2xl font-bold text-lg shadow-xl shadow-primary/20 active:scale-[0.98] transition-transform" onclick="addToCartAndCheckout()">
+                Lanjut ke Pembayaran
+            </button>
+</div>
+</div>
+</div>
+
+
+<script src="../assets/js/constants.js"></script>
+<script src="../assets/js/customer.js"></script>
+</body></html>
+
+<!-- Login Pelanggan (High-Fidelity) -->

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#54647a",
+                        "secondary-fixed": "#d3e4fe",
+                        "primary-fixed": "#e2e2e2",
+                        "tertiary-fixed": "#dde3eb",
+                        "on-primary-fixed-variant": "#474747",
+                        "surface-container-high": "#e6e8ea",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "surface-tint": "#5e5e5e",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "tertiary": "#000000",
+                        "inverse-primary": "#c6c6c6",
+                        "surface": "#f7f9fb",
+                        "on-surface": "#191c1e",
+                        "on-primary-container": "#848484",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-background": "#191c1e",
+                        "surface-dim": "#d8dadc",
+                        "surface-variant": "#e0e3e5",
+                        "outline-variant": "#cfc4c5",
+                        "surface-container-low": "#f2f4f6",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#7e848c",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#c1c7cf",
+                        "primary-container": "#1b1b1b",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#eceef0",
+                        "inverse-surface": "#2d3133",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#7e7576",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-secondary-fixed": "#0b1c30",
+                        "secondary-container": "#d0e1fb",
+                        "error": "#ba1a1a",
+                        "background": "#f7f9fb",
+                        "tertiary-container": "#161c22",
+                        "secondary": "#505f76",
+                        "on-tertiary-fixed-variant": "#41474e",
+                        "surface-bright": "#f7f9fb",
+                        "on-tertiary-fixed": "#161c22",
+                        "primary": "#000000",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#4c4546"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-margin": "16px",
+                        "stack-lg": "24px",
+                        "stack-md": "16px",
+                        "stack-sm": "8px",
+                        "gutter": "12px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "mono-label": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "mono-label": ["11px", { "lineHeight": "14px", "fontWeight": "500" }],
+                        "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script></head><body class="bg-background text-on-background font-body-sm pb-24 md:pb-0">
+
+    <!-- TopAppBar-->
+    <header class="fixed top-0 w-full z-50 flex justify-between items-center px-container-margin h-16 bg-surface dark:bg-on-background border-b border-outline-variant dark:border-outline">
+        <div class="flex items-center gap-4 text-primary dark:text-on-primary hover:bg-surface-container-high dark:hover:bg-surface-variant transition-colors duration-200 active:scale-95 p-2 rounded-full cursor-pointer">
+             <span class="material-symbols-outlined">menu</span>
+        </div>
+        <div class="font-headline-md text-headline-md font-bold text-on-surface dark:text-surface-bright">Delight Bakery</div>
+        <div class="flex items-center gap-4 text-primary dark:text-on-primary hover:bg-surface-container-high dark:hover:bg-surface-variant transition-colors duration-200 active:scale-95 p-2 rounded-full cursor-pointer">
+            <span class="material-symbols-outlined">notifications</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20 px-container-margin max-w-4xl mx-auto flex flex-col gap-stack-lg">
+        
+        <!-- Welcome Header -->
+        <section class="py-stack-md">
+            <h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">Halo, Admin!</h1>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-stack-sm">Ringkasan operasional hari ini.</p>
+        </section>
+
+        <!-- Summary Cards Grid (Bento Style) -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            
+            <!-- Revenue Card -->
+            <div class="bg-surface-container-lowest border border-outline-variant p-stack-md flex flex-col gap-stack-sm col-span-1 md:col-span-1 rounded-DEFAULT">
+                <div class="flex items-center justify-between text-on-surface-variant">
+                    <span class="font-label-caps text-label-caps">Pendapatan</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">payments</span>
+                </div>
+                <div class="font-headline-md text-headline-md text-on-surface">Rp 4.500.000</div>
+                <div class="font-mono-label text-mono-label text-primary flex items-center gap-1 mt-auto">
+                    <span class="material-symbols-outlined text-[14px]">trending_up</span> +12% dari minggu lalu
+                </div>
+            </div>
+
+            <!-- Active Orders Card -->
+            <div class="bg-surface-container-lowest border border-outline-variant p-stack-md flex flex-col gap-stack-sm col-span-1 rounded-DEFAULT">
+                <div class="flex items-center justify-between text-on-surface-variant">
+                    <span class="font-label-caps text-label-caps">Pesanan Aktif</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+                </div>
+                <div class="font-headline-md text-headline-md text-on-surface">24</div>
+                <div class="font-mono-label text-mono-label text-on-surface-variant mt-auto">
+                    Dalam proses produksi
+                </div>
+            </div>
+
+            <!-- Pending DP Card -->
+            <div class="bg-surface-container-lowest border border-outline-variant p-stack-md flex flex-col gap-stack-sm col-span-1 rounded-DEFAULT">
+                <div class="flex items-center justify-between text-on-surface-variant">
+                    <span class="font-label-caps text-label-caps">Menunggu DP</span>
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">pending_actions</span>
+                </div>
+                <div class="font-headline-md text-headline-md text-on-surface">8</div>
+                 <div class="font-mono-label text-mono-label text-on-surface-variant mt-auto">
+                    Butuh konfirmasi
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Deliveries Section -->
+        <section class="flex flex-col gap-stack-md">
+            <h2 class="font-headline-md text-headline-md text-on-surface">Jadwal Kirim Terdekat (Hari Ini)</h2>
+            
+            <div class="flex flex-col gap-stack-sm">
+                <!-- Delivery Item 1 -->
+                <div class="bg-surface-container-lowest border border-outline-variant p-stack-md rounded-DEFAULT flex items-center justify-between hover:bg-surface-container-low transition-colors duration-200 cursor-pointer">
+                    <div class="flex flex-col gap-1">
+                        <span class="font-body-lg text-body-lg text-on-surface font-semibold">ORD-0921</span>
+                        <span class="font-body-sm text-body-sm text-on-surface-variant">Katering Bu Yayuk - 50 Box</span>
+                    </div>
+                    <div class="flex flex-col items-end gap-1">
+                        <span class="font-mono-label text-mono-label text-primary-container bg-primary-fixed px-2 py-1 rounded-full">10:00 WIB</span>
+                        <span class="font-body-sm text-body-sm text-on-surface-variant">Siap Kirim</span>
+                    </div>
+                </div>
+
+                <!-- Delivery Item 2 -->
+                <div class="bg-surface-container-lowest border border-outline-variant p-stack-md rounded-DEFAULT flex items-center justify-between hover:bg-surface-container-low transition-colors duration-200 cursor-pointer">
+                    <div class="flex flex-col gap-1">
+                        <span class="font-body-lg text-body-lg text-on-surface font-semibold">ORD-0925</span>
+                        <span class="font-body-sm text-body-sm text-on-surface-variant">Toko Kopi Maju - 100 Pcs Packaging</span>
+                    </div>
+                    <div class="flex flex-col items-end gap-1">
+                        <span class="font-mono-label text-mono-label text-primary-container bg-primary-fixed px-2 py-1 rounded-full">14:00 WIB</span>
+                        <span class="font-body-sm text-body-sm text-on-surface-variant">Proses Packing</span>
+                    </div>
+                </div>
+                
+                 <!-- Delivery Item 3 -->
+                 <div class="bg-surface-container-lowest border border-outline-variant p-stack-md rounded-DEFAULT flex items-center justify-between hover:bg-surface-container-low transition-colors duration-200 cursor-pointer">
+                    <div class="flex flex-col gap-1">
+                        <span class="font-body-lg text-body-lg text-on-surface font-semibold">ORD-0928</span>
+                        <span class="font-body-sm text-body-sm text-on-surface-variant">Roti Panggang 88 - 30 Loyang</span>
+                    </div>
+                    <div class="flex flex-col items-end gap-1">
+                        <span class="font-mono-label text-mono-label text-primary-container bg-primary-fixed px-2 py-1 rounded-full">16:30 WIB</span>
+                        <span class="font-body-sm text-body-sm text-on-surface-variant">Menunggu Kurir</span>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="mt-stack-sm self-start border border-primary text-primary font-body-sm text-body-sm px-4 py-2 hover:bg-surface-container-high transition-colors duration-200 flex items-center gap-2">
+                Lihat Semua Jadwal <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+        </section>
+
+    </main>
+
+    <!-- BottomNavBar -->
+    <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 px-2 bg-surface dark:bg-on-background border-t border-outline-variant dark:border-outline"><!-- Active: Beranda -->
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-full px-4 py-1 transition-all duration-300 ease-in-out" href="#">
+    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+    <span class="font-mono-label text-mono-label mt-1">Beranda</span>
+</a>
+<!-- Inactive: Pesanan -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-secondary-container px-4 py-1 hover:bg-surface-container-low dark:hover:bg-surface-dim transition-all duration-300 ease-in-out rounded-full" href="#">
+    <span class="material-symbols-outlined">receipt_long</span>
+    <span class="font-mono-label text-mono-label mt-1">Pesanan</span>
+</a>
+<!-- Inactive: Profil -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-secondary-container px-4 py-1 hover:bg-surface-container-low dark:hover:bg-surface-dim transition-all duration-300 ease-in-out rounded-full" href="#">
+    <span class="material-symbols-outlined">person</span>
+    <span class="font-mono-label text-mono-label mt-1">Profil</span>
+</a></nav>
+
+</body></html>
+
+<!-- Kelola Pesanan Admin (Wireframe) -->

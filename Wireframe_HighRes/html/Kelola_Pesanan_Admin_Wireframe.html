@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#54647a",
+                        "secondary-fixed": "#d3e4fe",
+                        "primary-fixed": "#e2e2e2",
+                        "tertiary-fixed": "#dde3eb",
+                        "on-primary-fixed-variant": "#474747",
+                        "surface-container-high": "#e6e8ea",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "surface-tint": "#5e5e5e",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "tertiary": "#000000",
+                        "inverse-primary": "#c6c6c6",
+                        "surface": "#f7f9fb",
+                        "on-surface": "#191c1e",
+                        "on-primary-container": "#848484",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-background": "#191c1e",
+                        "surface-dim": "#d8dadc",
+                        "surface-variant": "#e0e3e5",
+                        "outline-variant": "#cfc4c5",
+                        "surface-container-low": "#f2f4f6",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#7e848c",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#c1c7cf",
+                        "primary-container": "#1b1b1b",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#eceef0",
+                        "inverse-surface": "#2d3133",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#7e7576",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-secondary-fixed": "#0b1c30",
+                        "secondary-container": "#d0e1fb",
+                        "error": "#ba1a1a",
+                        "background": "#f7f9fb",
+                        "tertiary-container": "#161c22",
+                        "secondary": "#505f76",
+                        "on-tertiary-fixed-variant": "#41474e",
+                        "surface-bright": "#f7f9fb",
+                        "on-tertiary-fixed": "#161c22",
+                        "primary": "#000000",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#4c4546"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-margin": "16px",
+                        "stack-lg": "24px",
+                        "stack-md": "16px",
+                        "stack-sm": "8px",
+                        "gutter": "12px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "mono-label": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "mono-label": ["11px", { "lineHeight": "14px", "fontWeight": "500" }],
+                        "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script></head><body class="text-on-background font-body-sm bg-background pb-24 md:pb-0 pt-16 md:pt-24 min-h-screen">
+
+    <!-- TopAppBar (Web & Mobile) -->
+    <header class="fixed top-0 w-full flex justify-between items-center px-container-margin h-16 w-full bg-surface z-50 border-b border-outline-variant">
+        <div class="flex items-center gap-4">
+            <button class="md:hidden p-2 -ml-2 text-primary hover:bg-surface-container-high transition-colors duration-200 active:scale-95 rounded-full">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+            </button>
+            <h1 class="font-headline-md text-headline-md font-bold text-on-surface">Delight Bakery</h1>
+        </div>
+        
+        <!-- Web Navigation (Hidden on Mobile) -->
+        <nav class="hidden md:flex items-center gap-8">
+            <a href="#" class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors duration-200 px-4 py-2 rounded-lg">
+                <span class="material-symbols-outlined mb-1">home</span>
+                <span class="font-mono-label text-mono-label">Beranda</span>
+            </a>
+            <a href="#" class="flex flex-col items-center justify-center text-primary bg-surface-container-high transition-colors duration-200 px-4 py-2 rounded-lg border-b-2 border-primary">
+                <span class="material-symbols-outlined mb-1">receipt_long</span>
+                <span class="font-mono-label text-mono-label">Pesanan</span>
+            </a>
+            <a href="#" class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors duration-200 px-4 py-2 rounded-lg">
+                <span class="material-symbols-outlined mb-1">person</span>
+                <span class="font-mono-label text-mono-label">Profil</span>
+            </a>
+        </nav>
+
+        <button class="p-2 -mr-2 text-primary hover:bg-surface-container-high transition-colors duration-200 active:scale-95 rounded-full">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">notifications</span>
+        </button>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-4xl mx-auto px-container-margin md:mt-8">
+        
+        <!-- Page Header & Actions -->
+        <div class="mb-stack-lg">
+            <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg mb-stack-md">Kelola Pesanan</h2>
+            
+            <div class="flex gap-gutter">
+                <div class="relative flex-1">
+                    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+                    <input type="text" placeholder="Cari ID, Nama Pelanggan..." class="w-full h-12 pl-10 pr-4 bg-surface-container-lowest blueprint-border rounded focus:outline-none focus:border-primary font-body-sm text-body-sm">
+                </div>
+                <button class="h-12 px-4 bg-surface-container-lowest blueprint-border flex items-center justify-center gap-2 hover:bg-surface-container-low transition-colors rounded">
+                    <span class="material-symbols-outlined text-on-surface">filter_list</span>
+                    <span class="hidden md:inline font-mono-label text-mono-label">Filter</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Tab Switcher -->
+        <div class="flex overflow-x-auto hide-scrollbar mb-stack-lg border-b border-outline-variant">
+            <button class="px-4 py-3 border-b-2 border-primary text-primary font-mono-label text-mono-label whitespace-nowrap min-w-[100px]">Masuk/Baru</button>
+            <button class="px-4 py-3 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface font-mono-label text-mono-label whitespace-nowrap min-w-[100px]">Diproses</button>
+            <button class="px-4 py-3 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface font-mono-label text-mono-label whitespace-nowrap min-w-[100px]">Selesai</button>
+        </div>
+
+        <!-- Order List (Bento-ish Grid Layout on Tablet/Desktop, Stack on Mobile) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+            
+            <!-- Order Card 1 -->
+            <div class="blueprint-card p-4 flex flex-col gap-4 cursor-pointer hover:bg-surface-container-low transition-colors group">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <span class="font-mono-label text-mono-label text-on-surface-variant mb-1 block">#PO-102</span>
+                        <h3 class="font-headline-md text-headline-md text-on-surface">Budi Santoso</h3>
+                    </div>
+                    <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">arrow_forward_ios</span>
+                </div>
+                <div class="blueprint-dashed p-3 grid grid-cols-2 gap-4">
+                    <div>
+                        <span class="font-mono-label text-mono-label text-on-surface-variant block mb-1">Tgl Kirim</span>
+                        <span class="font-body-sm text-body-sm text-on-surface">24 Okt 2023</span>
+                    </div>
+                    <div>
+                        <span class="font-mono-label text-mono-label text-on-surface-variant block mb-1">Status Pembayaran</span>
+                        <div class="flex items-center gap-1 text-on-surface">
+                            <span class="material-symbols-outlined text-[16px]">pending_actions</span>
+                            <span class="font-body-sm text-body-sm">Menunggu DP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Card 2 -->
+            <div class="blueprint-card p-4 flex flex-col gap-4 cursor-pointer hover:bg-surface-container-low transition-colors group">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <span class="font-mono-label text-mono-label text-on-surface-variant mb-1 block">#PO-103</span>
+                        <h3 class="font-headline-md text-headline-md text-on-surface">Siti Aminah</h3>
+                    </div>
+                    <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">arrow_forward_ios</span>
+                </div>
+                <div class="blueprint-dashed p-3 grid grid-cols-2 gap-4">
+                    <div>
+                        <span class="font-mono-label text-mono-label text-on-surface-variant block mb-1">Tgl Kirim</span>
+                        <span class="font-body-sm text-body-sm text-on-surface">25 Okt 2023</span>
+                    </div>
+                    <div>
+                        <span class="font-mono-label text-mono-label text-on-surface-variant block mb-1">Status Pembayaran</span>
+                        <div class="flex items-center gap-1 text-on-surface">
+                            <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                            <span class="font-body-sm text-body-sm">DP Lunas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Order Card 3 -->
+            <div class="blueprint-card p-4 flex flex-col gap-4 cursor-pointer hover:bg-surface-container-low transition-colors group">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <span class="font-mono-label text-mono-label text-on-surface-variant mb-1 block">#PO-104</span>
+                        <h3 class="font-headline-md text-headline-md text-on-surface">Toko Makmur</h3>
+                    </div>
+                    <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors" data-original-icon="arrow_">arrow_forward_ios</span>
+                </div>
+                <div class="blueprint-dashed p-3 grid grid-cols-2 gap-4">
+                    <div>
+                        <span class="font-mono-label text-mono-label text-on-surface-variant block mb-1">Tgl Kirim</span>
+                        <span class="font-body-sm text-body-sm text-on-surface">26 Okt 2023</span>
+                    </div>
+                    <div>
+                        <span class="font-mono-label text-mono-label text-on-surface-variant block mb-1">Status Pembayaran</span>
+                        <div class="flex items-center gap-1 text-on-surface">
+                            <span class="material-symbols-outlined text-[16px]">pending_actions</span>
+                            <span class="font-body-sm text-body-sm">Menunggu DP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- BottomNavBar (Mobile Only) -->
+    <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 bg-surface border-t border-outline-variant shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+  <a class="flex flex-1 flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">
+    <span class="material-symbols-outlined mb-1">home</span>
+    <span class="font-mono-label text-mono-label">Beranda</span>
+  </a>
+  <a class="flex flex-1 flex-col items-center justify-center text-primary transition-colors" href="#">
+    <div class="bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 mb-1">
+      <span class="material-symbols-outlined block" style="font-variation-settings: 'FILL' 1;">receipt_long</span>
+    </div>
+    <span class="font-mono-label text-mono-label font-bold">Pesanan</span>
+  </a>
+  <a class="flex flex-1 flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">
+    <span class="material-symbols-outlined mb-1">person</span>
+    <span class="font-mono-label text-mono-label">Profil</span>
+  </a>
+</nav>
+
+</body></html>
+
+<!-- Detail Pesanan Admin (Wireframe) -->

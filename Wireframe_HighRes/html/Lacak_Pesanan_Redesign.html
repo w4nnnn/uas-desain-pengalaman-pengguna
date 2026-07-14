@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Lacak Pesanan #PO-102</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-container": "#54647a",
+                      "secondary-fixed": "#d3e4fe",
+                      "primary-fixed": "#e2e2e2",
+                      "tertiary-fixed": "#dde3eb",
+                      "on-primary-fixed-variant": "#474747",
+                      "surface-container-high": "#e6e8ea",
+                      "secondary-fixed-dim": "#b7c8e1",
+                      "surface-tint": "#5e5e5e",
+                      "primary-fixed-dim": "#c6c6c6",
+                      "tertiary": "#000000",
+                      "inverse-primary": "#c6c6c6",
+                      "surface": "#f7f9fb",
+                      "on-surface": "#191c1e",
+                      "on-primary-container": "#848484",
+                      "error-container": "#ffdad6",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-background": "#191c1e",
+                      "surface-dim": "#d8dadc",
+                      "surface-variant": "#e0e3e5",
+                      "outline-variant": "#cfc4c5",
+                      "surface-container-low": "#f2f4f6",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-container": "#7e848c",
+                      "inverse-on-surface": "#eff1f3",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error": "#ffffff",
+                      "tertiary-fixed-dim": "#c1c7cf",
+                      "primary-container": "#1b1b1b",
+                      "on-primary": "#ffffff",
+                      "surface-container": "#eceef0",
+                      "inverse-surface": "#2d3133",
+                      "on-tertiary": "#ffffff",
+                      "outline": "#7e7576",
+                      "on-primary-fixed": "#1b1b1b",
+                      "on-secondary-fixed": "#0b1c30",
+                      "secondary-container": "#d0e1fb",
+                      "error": "#ba1a1a",
+                      "background": "#f7f9fb",
+                      "tertiary-container": "#161c22",
+                      "secondary": "#505f76",
+                      "on-tertiary-fixed-variant": "#41474e",
+                      "surface-bright": "#f7f9fb",
+                      "on-tertiary-fixed": "#161c22",
+                      "primary": "#000000",
+                      "on-secondary-fixed-variant": "#38485d",
+                      "on-secondary": "#ffffff",
+                      "on-surface-variant": "#4c4546"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-margin": "16px",
+                      "stack-lg": "24px",
+                      "stack-md": "16px",
+                      "stack-sm": "8px",
+                      "gutter": "12px"
+              },
+              "fontFamily": {
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "mono-label": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "mono-label": [
+                              "11px",
+                              {
+                                      "lineHeight": "14px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col items-center">
+<!-- Mobile Container -->
+<main class="w-full max-w-[480px] bg-surface min-h-screen relative shadow-sm mx-auto flex flex-col">
+<!-- Header -->
+<header class="flex justify-between items-center px-container-margin h-16 w-full bg-surface-container-lowest z-50 border-b border-outline-variant sticky top-0 max-w-[480px]">
+<button aria-label="Kembali" class="flex items-center text-on-surface transition-colors duration-200 active:scale-95">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-on-surface">Lacak Pesanan #PO-102</h1>
+<div class="w-6 h-6"></div>
+</header>
+<!-- Main Content Area -->
+<div class="flex-1 px-container-margin pt-stack-md pb-24 overflow-y-auto space-y-stack-lg">
+<!-- Order Status Summary -->
+<section class="bg-surface-container-lowest p-stack-md rounded-xl border border-outline-variant flex flex-col gap-4">
+<div class="flex flex-col gap-1">
+<p class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-wider">Status Pesanan</p>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">sync</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">DIPROSES</span>
+</div>
+</div>
+<div class="h-px w-full bg-outline-variant"></div>
+<div class="flex flex-col gap-1">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Estimasi Tiba</p>
+<p class="font-body-lg text-body-lg font-semibold text-on-surface">24 Okt 2023</p>
+</div>
+</section>
+<!-- Vertical Timeline -->
+<section class="bg-surface-container-lowest p-stack-md rounded-xl border border-outline-variant">
+<h2 class="font-headline-md text-headline-md font-bold mb-stack-lg text-on-surface">Riwayat Perjalanan</h2>
+<div class="relative space-y-8 pl-14">
+<!-- Vertical Line -->
+<div class="absolute left-6 top-4 bottom-4 w-0.5 bg-outline-variant"></div>
+<!-- Step 1: Menunggu Konfirmasi (Completed) -->
+<div class="relative">
+<!-- Node indicator -->
+<div class="absolute -left-[47px] top-0 w-8 h-8 rounded-full bg-surface-container-high border-2 border-surface-container-lowest flex items-center justify-center z-10">
+<span class="material-symbols-outlined text-[16px] text-on-surface" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface">Menunggu Konfirmasi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">20 Okt 2023, 09:00 WIB</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">Pesanan Anda telah diterima dan sedang menunggu konfirmasi penjual.</p>
+</div>
+<!-- Step 2: DP Diterima (Completed) -->
+<div class="relative">
+<div class="absolute -left-[47px] top-0 w-8 h-8 rounded-full bg-surface-container-high border-2 border-surface-container-lowest flex items-center justify-center z-10">
+<span class="material-symbols-outlined text-[16px] text-on-surface" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface">DP Diterima</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">21 Okt 2023, 14:30 WIB</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">Pembayaran DP telah dikonfirmasi. Pesanan mulai diproduksi.</p>
+</div>
+<!-- Step 3: Dikirim (Current/Active) -->
+<div class="relative">
+<!-- Active Node Indicator -->
+<div class="absolute -left-[47px] top-0 w-8 h-8 rounded-full bg-primary border-4 border-surface-container-lowest flex items-center justify-center z-10 shadow-sm">
+<div class="w-2.5 h-2.5 bg-on-primary rounded-full"></div>
+</div>
+<h3 class="font-body-lg text-body-lg font-bold text-on-surface">Dikirim</h3>
+<p class="font-body-sm text-body-sm font-medium text-on-surface mt-1">Hari ini, 10:15 WIB</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">Pesanan sedang dalam perjalanan ke alamat tujuan.</p>
+<!-- Courier Info Card -->
+<div class="mt-4 p-4 rounded-xl border border-outline-variant bg-surface flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface" style="font-variation-settings: 'FILL' 0;">local_shipping</span>
+</div>
+<div>
+<p class="font-body-sm text-body-sm font-semibold text-on-surface">Kurir Internal UMKM</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bpk. Budi - 08123456789</p>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-on-surface text-[20px]" style="font-variation-settings: 'FILL' 0;">call</span>
+</button>
+</div>
+</div>
+<!-- Step 4: Selesai (Pending) -->
+<div class="relative">
+<!-- Inactive Node -->
+<div class="absolute -left-[43px] top-1 w-6 h-6 rounded-full bg-surface border-2 border-outline-variant z-10"></div>
+<h3 class="font-body-lg text-body-lg font-medium text-on-surface-variant">Selesai</h3>
+<p class="font-body-sm text-body-sm text-outline mt-2 leading-relaxed">Pesanan tiba dan pelunasan selesai.</p>
+</div>
+</div>
+</section>
+<!-- Order Details Summary Bottom Info -->
+<section class="bg-surface-container-lowest p-stack-md rounded-xl border border-outline-variant">
+<h3 class="font-headline-md text-headline-md font-bold mb-4 text-on-surface">Rincian Item</h3>
+<!-- Items list -->
+<div class="border-b border-outline-variant pb-4 mb-4">
+<div class="flex justify-between items-start gap-4">
+<div class="flex-1">
+<p class="font-body-lg text-body-lg font-semibold text-on-surface">Croissant Butter Box x 50</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Varian: Classic, Ukuran Reguler</p>
+</div>
+<p class="font-body-lg text-body-lg font-bold text-on-surface whitespace-nowrap">Rp 2.500.000</p>
+</div>
+</div>
+<!-- Payment Reminder (Crucial Info) -->
+<div class="bg-surface-container-high p-4 rounded-xl border-l-4 border-primary flex gap-3 items-start">
+<span class="material-symbols-outlined text-on-surface mt-0.5" style="font-variation-settings: 'FILL' 1;">info</span>
+<div>
+<p class="font-body-lg text-body-lg font-bold text-on-surface">Perhatian Pelunasan</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">Sisa tagihan sebesar <span class="font-semibold text-on-surface">Rp 1.250.000</span> dibayar saat pesanan tiba.</p>
+</div>
+</div>
+</section>
+</div>
+</main>
+
+
+
+
+</body></html>

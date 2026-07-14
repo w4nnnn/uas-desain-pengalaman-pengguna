@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Flow - PO UMKM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center py-10 px-5">
+    <div class="mermaid flex justify-center">
+        graph TD
+            classDef admin fill:#d3e4fe,stroke:#505f76,stroke-width:2px,color:#0b1c30;
+            classDef cust fill:#ffdad6,stroke:#93000a,stroke-width:2px,color:#3a0001;
+            classDef action fill:#ffffff,stroke:#7e7576,stroke-width:2px,color:#191c1e;
+
+            subgraph Sisi Pelanggan
+                P1([Mulai: Buka Web/App]):::cust --> P2(Login / Daftar Akun):::action
+                P2 --> P3(Eksplorasi Katalog Produk):::action
+                P3 --> P4(Pilih Produk & Form PO):::action
+                P4 --> P5(Cek Ringkasan Tagihan):::action
+                P5 --> P6(Upload Bukti DP):::action
+                P6 --> P7(Pantau Status: Lacak):::cust
+            end
+
+            subgraph Sisi Admin
+                A1([Mulai: Buka App Admin]):::admin --> A2(Login Pemilik):::action
+                A2 --> A3(Dashboard / Beranda):::action
+                A3 --> A4{Ada Pesanan Baru?}:::action
+                A4 -- Ya --> A5(Tinjau Bukti DP):::action
+                A5 --> A6[Verifikasi & Diproses]:::admin
+                A6 --> A7[Kirim & Selesai]:::admin
+            end
+
+            P6 -.->|Sistem Mengirim Notifikasi| A4
+            A6 -.->|Status Berubah| P7
+            A7 -.->|Pesanan Selesai| P7
+    </div>
+</body>
+</html>

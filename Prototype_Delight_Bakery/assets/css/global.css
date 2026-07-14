@@ -1,0 +1,48 @@
+/* Material Symbols Base Styles */
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* Typography Base */
+body {
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background Utility Classes */
+.bg-bakery {
+    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB3ehubHQZ-N2qOl4wBz6kxkop44XrOU_gEuNhY0g-DfeHjoG_YFrmUlsrtYioqpAisCunWFGAXH1a2a2Ep5L7nAIgfAIlFzZMUEvD528daJoeVbrZxO3O0etevOayirx7IahLpv5V9buBJFqS4uXqh4dar3oGD2MBvLD0d8TLqVvTV602TmR_q8aA7g21IFmMab5p1RArojWuc5redvPO1SJBiqwgAnrQ8LXYz9xa5BsRE8FePnQiStQ');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-pattern {
+    background-image: radial-gradient(#FF7A00 1px, transparent 1px);
+    background-size: 16px 16px;
+    opacity: 0.05;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #E5E7EB;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #D1D5DB;
+}
+
+/* Base Form Inputs (Removing default focus outlines) */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    box-shadow: none;
+}

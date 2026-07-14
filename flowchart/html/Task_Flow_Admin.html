@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Flow Admin - PO UMKM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center py-10 px-5">
+    <div class="mermaid flex justify-center">
+        flowchart LR
+            classDef admin fill:#d3e4fe,stroke:#505f76,stroke-width:2px,color:#0b1c30;
+            classDef startEnd fill:#191c1e,stroke:#191c1e,stroke-width:2px,color:#ffffff;
+            classDef action fill:#ffffff,stroke:#7e7576,stroke-width:2px,color:#191c1e;
+
+            StartAdmin([Mulai]):::startEnd --> A1(Buka Halaman<br/>Pesanan Masuk):::action
+            A1 --> A2(Cek Detail &<br/>Bukti DP):::action
+            A2 --> A3(Klik Konfirmasi<br/>Pembayaran):::action
+            A3 --> A4(Ubah Status<br/>menjadi Diproses):::action
+            A4 --> EndAdmin([Selesai]):::startEnd
+    </div>
+</body>
+</html>

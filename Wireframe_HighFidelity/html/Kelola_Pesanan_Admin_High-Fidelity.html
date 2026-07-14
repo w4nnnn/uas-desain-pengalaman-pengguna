@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Poppins:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "primary": "#1E3A8A",
+                            "on-primary": "#ffffff",
+                            "secondary": "#505f76",
+                            "background": "#F3F4F6",
+                            "surface": "#ffffff",
+                            "on-surface": "#111827",
+                            "on-surface-variant": "#6B7280",
+                            "outline-variant": "#E5E7EB",
+                            "status-amber": "#F59E0B",
+                            "status-emerald": "#10B981"
+                        },
+                        "borderRadius": {
+                            "DEFAULT": "0.125rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                        },
+                        "spacing": {
+                            "container-margin": "16px",
+                            "stack-lg": "24px",
+                            "stack-md": "16px",
+                            "stack-sm": "8px"
+                        },
+                        "fontFamily": {
+                            "body": ["Inter", "sans-serif"],
+                            "heading": ["Poppins", "sans-serif"]
+                        }
+                    }
+                }
+            }
+        } catch (_e) {}
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="text-on-surface bg-background pb-24 md:pb-8 pt-16 md:pt-20 min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-container-margin h-16 bg-surface z-50 border-b border-outline-variant shadow-sm">
+<div class="flex items-center gap-4">
+<button class="md:hidden p-2 -ml-2 text-primary hover:bg-gray-100 transition-colors rounded-full">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="text-xl font-bold text-primary tracking-tight">Delight Bakery</h1>
+</div>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex items-center gap-6">
+<a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors py-2" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-sm font-medium">Beranda</span>
+</a>
+<a class="flex items-center gap-2 text-primary border-b-2 border-primary py-2" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="text-sm font-bold">Pesanan</span>
+</a>
+<a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors py-2" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-sm font-medium">Profil</span>
+</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="p-2 text-on-surface-variant hover:bg-gray-100 transition-colors rounded-full relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white"></span>
+</button>
+<div class="hidden md:block w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center ml-2 overflow-hidden border border-primary/20">
+<img alt="Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx8MjvHwfF-ysIxQ__2iQb05NbvEEFvKU5IyVefArdBa0ouz8yGi12W5JnENoIF4yDD30WtszLdykkUlag05t4YmG9aUdnThFsC646AeLdrbfFMEyxDTSkCwM7DpfJb6wmjzLaMbZz6PKdQvi1YHujByobT1wHPEODm0Fgm29maS7uZcCdr67PkqrU9Z8CFO0bC8-6gDpblyYhOvrHcsjvBmCqXoqmXO-ndKwk9RYeUMG9yfHDPLzfcA">
+</div>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="max-w-5xl mx-auto px-container-margin mt-6">
+<!-- Page Header & Actions -->
+<div class="mb-stack-lg">
+<h2 class="text-2xl md:text-3xl font-bold mb-stack-md text-slate-900">Kelola Pesanan</h2>
+<div class="flex gap-3">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-12 pl-11 pr-4 bg-surface border-none ring-1 ring-gray-200 rounded-xl focus:ring-2 focus:ring-primary font-body text-sm transition-all shadow-sm" placeholder="Cari ID, Nama Pelanggan..." type="text">
+</div>
+<button class="h-12 px-5 bg-surface ring-1 ring-gray-200 flex items-center justify-center gap-2 hover:bg-gray-50 transition-all rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-on-surface text-[20px]">filter_list</span>
+<span class="hidden md:inline font-medium text-sm">Filter</span>
+</button>
+</div>
+</div>
+<!-- Tab Navigation -->
+<div class="flex overflow-x-auto hide-scrollbar mb-6 border-b border-outline-variant">
+<button class="px-6 py-3 border-b-2 border-primary text-primary font-bold text-sm whitespace-nowrap">Masuk/Baru</button>
+<button class="px-6 py-3 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface font-medium text-sm whitespace-nowrap">Diproses</button>
+<button class="px-6 py-3 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface font-medium text-sm whitespace-nowrap">Selesai</button>
+</div>
+<!-- Order List -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Order Card 1 -->
+<div class="bg-surface rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/30 hover:shadow-md transition-all group cursor-pointer" onclick="window.location.href='Detail_Pesanan_Admin_High-Fidelity.html'">
+<div class="flex justify-between items-start mb-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center overflow-hidden">
+<img alt="Budi" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRcXYqpD9bn7KyRsuYMFSsS3nsyEW7XBH70iAhn0deIxfKaEORrrfe4wYWkIfppmMLbgkVs2K-n7ES7xA_Q_mo12ckBXmTp8a-w92JFj0WGvP5RX6sxujWryjlkYHAtwkGh6m8EnLCgWRXwdSWDuLSdOz6TCKHfNOliyJbIFpM8WuM2FEskQmutkw1G5g--T8x1TZs-nUH3NW0rI5NUhMMfXpQPiHtogQLH0LOmy48jR4VVusTqa8xzg">
+</div>
+<div>
+<span class="text-[11px] font-bold text-on-surface-variant tracking-wider uppercase">#PO-102</span>
+<h3 class="font-bold text-lg text-on-surface">Budi Santoso</h3>
+</div>
+</div>
+<span class="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors text-xl">chevron_right</span>
+</div>
+<div class="grid grid-cols-2 gap-4 bg-gray-50 rounded-lg p-3">
+<div>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant block mb-1">Tgl Kirim</span>
+<span class="text-sm font-medium">24 Okt 2023</span>
+</div>
+<div>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant block mb-1">Status Pembayaran</span>
+<div class="flex items-center gap-1.5 text-status-amber">
+<span class="material-symbols-outlined text-[16px] fill-[1]">pending_actions</span>
+<span class="text-xs font-bold">Menunggu DP</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Order Card 2 -->
+<div class="bg-surface rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/30 hover:shadow-md transition-all group cursor-pointer" onclick="window.location.href='Detail_Pesanan_Admin_High-Fidelity.html'">
+<div class="flex justify-between items-start mb-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center overflow-hidden">
+<img alt="Siti" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyhX3LjoNP7Aa5I0ZKiCXKxP4uyEo7B4BQdMBhYmd9GDDtr6kmA9h99_8HeBEWmoBbl96FS3_bsS6SUetvCA43rbd9_7LGeTDK3TUG1e-JaumEcBrxwxq_v2TIEtfDAkhGRHXrbCvdq-6gHN5ypvUb8J1QtEla1U2vA4U8R5l-uqeyRsb8OKwwq9EjpUaHBvpAq_RLruRRM2HNR3n1R91W2TKsJgEkPqe7fgONXXipj3UE8Q67YmwScA">
+</div>
+<div>
+<span class="text-[11px] font-bold text-on-surface-variant tracking-wider uppercase">#PO-103</span>
+<h3 class="font-bold text-lg text-on-surface">Siti Aminah</h3>
+</div>
+</div>
+<span class="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors text-xl">chevron_right</span>
+</div>
+<div class="grid grid-cols-2 gap-4 bg-gray-50 rounded-lg p-3">
+<div>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant block mb-1">Tgl Kirim</span>
+<span class="text-sm font-medium">25 Okt 2023</span>
+</div>
+<div>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant block mb-1">Status Pembayaran</span>
+<div class="flex items-center gap-1.5 text-status-emerald">
+<span class="material-symbols-outlined text-[16px] fill-[1]">check_circle</span>
+<span class="text-xs font-bold">DP Lunas</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Order Card 3 -->
+<div class="bg-surface rounded-xl p-5 shadow-sm border border-gray-100 hover:border-primary/30 hover:shadow-md transition-all group cursor-pointer" onclick="window.location.href='Detail_Pesanan_Admin_High-Fidelity.html'">
+<div class="flex justify-between items-start mb-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center overflow-hidden">
+<img alt="Toko" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDyJuItTyLzpFgcphyBNbbCmvfzzJcW3GrZ_PQ8-CJcxo5sOUTcDs9F-gCgNYU1vnMlsLwb14_kM2BbjTdarZW1VfHEGN2cMC_6uONwExazSTG_N8ikCsDURzjRZKS5A3rGb3SuOD9QRhLZRBNe8QDYPe8YlpHy0EtaYjO4r4OeloRu5G7F_mkia9YOfV-IzQ1nEYXUEKSZyP68BY1f0BUi2lYWIGnCtimk81LDLjCaOQ6j_iUVZMmkA">
+</div>
+<div>
+<span class="text-[11px] font-bold text-on-surface-variant tracking-wider uppercase">#PO-104</span>
+<h3 class="font-bold text-lg text-on-surface">Toko Makmur</h3>
+</div>
+</div>
+<span class="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors text-xl">chevron_right</span>
+</div>
+<div class="grid grid-cols-2 gap-4 bg-gray-50 rounded-lg p-3">
+<div>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant block mb-1">Tgl Kirim</span>
+<span class="text-sm font-medium">26 Okt 2023</span>
+</div>
+<div>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant block mb-1">Status Pembayaran</span>
+<div class="flex items-center gap-1.5 text-status-amber">
+<span class="material-symbols-outlined text-[16px] fill-[1]">pending_actions</span>
+<span class="text-xs font-bold">Menunggu DP</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 bg-surface border-t border-outline-variant shadow-[0_-4px_12px_rgba(0,0,0,0.05)] px-4">
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all flex-1" href="Dashboard_Admin_High-Fidelity.html">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="text-[10px] font-bold uppercase tracking-wide">Beranda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary flex-1 relative" href="Kelola_Pesanan_Admin_High-Fidelity.html">
+<div class="bg-primary/10 text-primary rounded-xl px-5 py-1.5 mb-1">
+<span class="material-symbols-outlined block fill-[1]">receipt_long</span>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-wide">Pesanan</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all flex-1" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="text-[10px] font-bold uppercase tracking-wide">Profil</span>
+</a>
+</nav>
+
+
+</body></html>
+
+<!-- Dashboard Admin (High-Fidelity) -->
