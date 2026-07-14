@@ -34,6 +34,14 @@ const ADMIN_ROUTES = [
     icon: "inventory_2",
     meta: "Detail",
   },
+  {
+    href: "/admin/profile",
+    label: "Profil Admin",
+    description:
+      "Info akun, statistik toko, pengaturan & keluar (logout).",
+    icon: "person",
+    meta: "Profil",
+  },
 ];
 
 const CUSTOMER_ROUTES = [
@@ -75,6 +83,14 @@ const CUSTOMER_ROUTES = [
       "Timeline vertikal status pesanan dari konfirmasi sampai selesai.",
     icon: "timeline",
     meta: "Tracking",
+  },
+  {
+    href: "/profil",
+    label: "Profil Pelanggan",
+    description:
+      "Info akun, alamat tersimpan, bantuan & keluar (logout).",
+    icon: "person",
+    meta: "Profil",
   },
 ];
 
@@ -132,7 +148,7 @@ export default function Home() {
               </p>
             </div>
             <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
-              5 Halaman
+              6 Halaman
             </span>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -154,7 +170,7 @@ export default function Home() {
               </p>
             </div>
             <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
-              4 Halaman
+              5 Halaman
             </span>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
