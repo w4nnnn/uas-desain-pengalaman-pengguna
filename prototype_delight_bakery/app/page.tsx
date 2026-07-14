@@ -110,7 +110,7 @@ export default function Home() {
             Delight Bakery
           </Link>
           <span className="hidden sm:inline-flex text-xs font-bold uppercase tracking-widest text-muted-foreground">
-            High-Fidelity Prototype · 9 Halaman
+            High-Fidelity Prototype · 11 Halaman
           </span>
         </div>
       </header>
