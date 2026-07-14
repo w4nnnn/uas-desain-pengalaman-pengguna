@@ -87,39 +87,39 @@
 **Sisi Admin (5 Halaman):**
 
 1. **Layar Login Admin:** Menampilkan login bergaya profesional untuk Admin.
-   ![Login Admin](Wireframe_HighFidelity/png/Login_Admin_High-Fidelity.png)
+   ![Login Admin](screenshots/admin/Login_Admin.png)
 
 2. **Layar Dashboard Admin:** Visualisasi pendapatan dan performa dengan warna dan ikon. Menampilkan kartu statistik (*bento*) berisi Pendapatan Hari Ini, Pesanan Aktif, dan Menunggu DP, serta daftar Jadwal Kirim Terdekat.
-   ![Dashboard Admin](Wireframe_HighFidelity/png/Dashboard_Admin_High-Fidelity.png)
+   ![Dashboard Admin](screenshots/admin/Dashboard_Admin.png)
 
 3. **Layar Daftar Pesanan (Kelola Pesanan):** Daftar interaktif dengan tab filter status (Masuk/Baru, Diproses, Selesai) berbadge angka, pencarian (*search*) berdasarkan ID/nama pelanggan, dan sortir terbaru/terlama.
-   ![Kelola Pesanan Admin](Wireframe_HighFidelity/png/Kelola_Pesanan_Admin_High-Fidelity.png)
+   ![Kelola Pesanan Admin](screenshots/admin/Kelola_Pesanan.png)
 
 4. **Layar Detail Pesanan:** Rincian informasi beserta tombol aksi cepat (Tolak / Konfirmasi DP & Proses). Menampilkan info pelanggan, rincian item, catatan pembeli, status pembayaran DP, bukti transfer, dan sisa tagihan.
-   ![Detail Pesanan Admin](Wireframe_HighFidelity/png/Detail_Pesanan_Admin_High-Fidelity.png)
+   ![Detail Pesanan Admin](screenshots/admin/Detail_Pesanan.png)
 
 5. **Layar Profil Admin:** Informasi akun administrator (avatar, nama, email, telepon) beserta stat toko (tanggal bergabung, total pesanan, rating), daftar pengaturan (Pengaturan Toko, Laporan Penjualan, Bantuan & FAQ, Tentang Aplikasi), dan tombol keluar.
-   ![Profil Admin](Wireframe_HighFidelity/png/Profil_Admin_High-Fidelity.png)
+   ![Profil Admin](screenshots/admin/Profil_Admin.png)
 
 **Sisi Pelanggan (6 Halaman):**
 
 1. **Layar Login Pelanggan:** Desain yang ramah dan *welcoming* dengan visual yang sesuai untuk pembeli.
-   ![Login Pelanggan](Wireframe_HighFidelity/png/Login_Pelanggan_High-Fidelity.png)
+   ![Login Pelanggan](screenshots/customer/Login_Pelanggan.png)
 
 2. **Layar Katalog & Form PO:** Tampilan menggugah selera untuk memilih produk *bakery*. Menampilkan grid 2 kolom dengan 6 produk, ikon favorit, tombol "Pesan", serta *bottom sheet* pemesanan dengan *quantity stepper*, tanggal kirim, dan catatan khusus.
-   ![Katalog & PO](Wireframe_HighFidelity/png/Katalog__PO_High-Fidelity.png)
+   ![Katalog & PO](screenshots/customer/Katalog_Pelanggan.png)
 
 3. **Layar Pembayaran DP:** Panduan yang jelas untuk transfer dan upload bukti bayar. Menampilkan rincian tagihan, pilihan rekening tujuan (BCA/Mandiri) dengan fitur salin, serta area unggah bukti transfer.
-   ![Pembayaran DP](Wireframe_HighFidelity/png/Pembayaran_DP_High-Fidelity.png)
+   ![Pembayaran DP](screenshots/customer/Pembayaran_DP.png)
 
 4. **Layar Riwayat Pesanan:** Memonitor status dengan kartu riwayat yang rapi. Terbagi menjadi dua tab: Aktif (pesanan dalam proses) dan Riwayat (pesanan selesai/ditolak), masing-masing dengan badge status berwarna.
-   ![Riwayat Pesanan](Wireframe_HighFidelity/png/Riwayat_Pesanan_High-Fidelity.png)
+   ![Riwayat Pesanan](screenshots/customer/Riwayat_Pesanan.png)
 
 5. **Layar Lacak Pesanan:** *Timeline* proses dengan visualisasi warna hijau (*emerald*) untuk status selesai, amber untuk status aktif, dan abu-abu untuk status mendatang. Menampilkan informasi kurir pada status pengiriman.
-   ![Lacak Pesanan](Wireframe_HighFidelity/png/Lacak_Pesanan_High-Fidelity.png)
+   ![Lacak Pesanan](screenshots/customer/Lacak_Pesanan.png)
 
 6. **Layar Profil Pelanggan:** Informasi akun pelanggan (avatar, nama, telepon, alamat) beserta daftar menu (Alamat Tersimpan, Bantuan & FAQ, Tentang Aplikasi) dan tombol keluar berwarna merah.
-   ![Profil Pelanggan](Wireframe_HighFidelity/png/Profil_Pelanggan_High-Fidelity.png)
+   ![Profil Pelanggan](screenshots/customer/Profil_Pelanggan.png)
 
 **Design System Sederhana:**
 *   **Tipografi:** Poppins (untuk *Heading*) dan Inter (untuk *Body*).
