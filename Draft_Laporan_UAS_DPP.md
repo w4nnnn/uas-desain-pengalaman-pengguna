@@ -98,6 +98,9 @@
 4. **Layar Detail Pesanan:** Rincian informasi beserta tombol aksi cepat.
    ![Detail Pesanan Admin](Wireframe_HighFidelity/png/Detail_Pesanan_Admin_High-Fidelity.png)
 
+5. **Layar Profil Admin:** Info akun, statistik toko, pengaturan & keluar (logout).
+   ![Profil Admin](Wireframe_HighFidelity/png/Profil_Admin_High-Fidelity.png)
+
 **Sisi Pelanggan:**
 
 1. **Layar Login Pelanggan:** Desain yang ramah dan *welcoming* dengan visual yang sesuai untuk pembeli.
@@ -114,6 +117,9 @@
 
 5. **Layar Lacak Pesanan:** *Timeline* proses dengan visualisasi warna hijau (*emerald*) untuk status selesai.
    ![Lacak Pesanan](Wireframe_HighFidelity/png/Lacak_Pesanan_High-Fidelity.png)
+
+6. **Layar Profil Pelanggan:** Info akun, alamat tersimpan, bantuan & keluar (logout).
+   ![Profil Pelanggan](Wireframe_HighFidelity/png/Profil_Pelanggan_High-Fidelity.png)
 
 **Design System Sederhana:**
 *   **Tipografi:** Poppins (untuk *Heading*) dan Inter (untuk *Body*).
